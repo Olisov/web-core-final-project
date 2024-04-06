@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  box-sizing: border-box;
+  max-width: $screen-size;
+  overflow: auto;
+  // padding: 1.5rem var(--edge-padding);
+  margin: 0;
+
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__item {
+    color: $grayTextColor;
+    line-height: 240%;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    padding: 0 16px;
+    margin-right: 4px;
+  }
+
+
+}

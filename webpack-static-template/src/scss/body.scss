@@ -1,0 +1,21 @@
+.body {
+  font-family: "TTLakes", sans-serif;
+  font-size: 16px;
+  color: $blackTextColor;
+  max-width: $screen-desktop;
+
+  // border: 1px solid red;
+
+
+  @media (min-width: $screen-laptop) {
+    display: flex;
+  }
+
+  &--center {
+
+    @media (min-width: $screen-laptop) {
+      margin: 0 auto;
+    }
+  }
+}
+

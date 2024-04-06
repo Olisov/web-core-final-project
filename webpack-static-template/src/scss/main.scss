@@ -1,0 +1,24 @@
+.main {
+
+
+  // max-width: 100%;
+
+  box-sizing: border-box;
+  @include edge-padding(0, 1rem, $mobile-multiplier);
+
+  @media (min-width: $screen-tablet) {
+    @include edge-padding(0, 1rem, $tablet-multiplier);
+  }
+
+  @media (min-width: $screen-laptop) {
+    @include edge-padding(0, 1rem, $desktop-multiplier);
+    // max-width: 1040px;
+    max-width: calc(100% - 320px);
+  }
+
+  @media (min-width: $screen-desktop) {
+    @include edge-padding(0, 1rem, $desktop-multiplier);
+    // max-width: 1120px;
+  }
+
+}

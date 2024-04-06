@@ -1,0 +1,34 @@
+.contact-info {
+  // padding-top: 12px;
+
+  &__buttons-group{
+    width: 152px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4px;
+  }
+
+  &__email {
+    font-family: "TTLakes-medium", sans-serif;
+    line-height: 170%;
+    letter-spacing: -0.01em;
+    padding: 12px 0;
+  }
+
+  &__phone-num {
+    font-family: "TTLakes-bold", sans-serif;
+
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.1em;
+
+    line-height: 133%;
+    letter-spacing: -0.03em;
+
+    @media (min-width: $screen-tablet) {
+      margin-bottom: 32px;
+    }
+
+  }
+
+}

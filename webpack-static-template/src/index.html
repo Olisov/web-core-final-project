@@ -8,24 +8,97 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   </head>
-  <body>
+  <body class="body body--center">
       <header class="header">
         <div class="header__items-group">
-          <button class="header__btn func-btn func-btn--circle func-btn--pink func-btn--burger-menu"></button>
-          <img class="header__logo" src="./img/icons/logo.svg" alt="CPS Logo" >
+          <button class="func-btn func-btn--circle func-btn--pink func-btn--burger-menu"></button>
+          <img class="logo" src="./img/icons/logo.svg" alt="CPS Logo" width="97" height="51">
         </div>
         <div class="header__items-group">
-          <button class="header__btn func-btn func-btn--circle func-btn--pink func-btn--phone"></button>
-          <button class="header__btn func-btn func-btn--circle func-btn--pink func-btn--message"></button>
-          <button class="header__btn func-btn func-btn--circle func-btn--pink func-btn--login"></button>
+          <button class="func-btn func-btn--circle func-btn--pink func-btn--phone"></button>
+          <button class="func-btn func-btn--circle func-btn--pink func-btn--message"></button>
+          <button class="func-btn func-btn--circle func-btn--pink func-btn--login"></button>
         </div>
         <div class="header__items-group">
-          <button class="header__btn func-btn func-btn--circle func-btn--pink func-btn--request"></button>
-          <button class="header__btn func-btn func-btn--circle func-btn--pink func-btn--repair-status"></button>
+          <button class="func-btn func-btn--circle func-btn--pink func-btn--request"></button>
+          <button class="func-btn func-btn--circle func-btn--pink func-btn--repair-status"></button>
         </div>
       </header>
 
 
+      <aside class="aside-nav">
+        <div class="aside-nav__header">
+          <div class="aside-nav__header-group">
+            <button class="aside-nav__header-close-btn func-btn func-btn--circle func-btn--pink func-btn--close"></button>
+            <img class="aside-nav__header-logo" src="./img/icons/logo.svg" alt="CPS Logo" width="97" height="51">
+          </div>
+          <button class="func-btn func-btn--circle func-btn--pink func-btn--search"></button>
+        </div>
+
+        <menu class="aside-nav__body menu">
+            <a class="menu__href" href="#">Ремонт техники</a>
+            <a class="menu__href" href="#">Услуги и сервисы</a>
+            <a class="menu__href" href="#">Корпоративным клиентам</a>
+            <a class="menu__href" href="#">Продавцам техники</a>
+            <a class="menu__href" href="#">Партнерам</a>
+            <a class="menu__href" href="#">Производителям</a>
+            <a class="menu__href" href="#">Наши сервисные центры</a>
+            <a class="menu__href" href="#">Контакты</a>
+        </menu>
+
+        <div class="aside-nav__footer">
+          <div class="contact-info">
+            <div class="contact-info__buttons-group">
+              <button class="func-btn func-btn--circle func-btn--pink func-btn--phone"></button>
+              <button class="func-btn func-btn--circle func-btn--pink func-btn--message"></button>
+              <button class="func-btn func-btn--circle func-btn--pink func-btn--login"></button>
+            </div>
+            <div class="contact-info__email">mail@cps.com</div>
+            <div class="contact-info__phone-num">8 800 890 8900</div>
+          </div>
+          <div class="lang-group">
+            <label>
+              <input type="radio" checked name="lang-radio" class="lang-group__input"></input>
+              <span class="lang-group__lang">RU</span>
+            </label>
+            <label>
+              <input type="radio" name="lang-radio" class="lang-group__input"></input>
+              <span class="lang-group__lang">EN</span>
+            </label>
+            <label>
+              <input type="radio" name="lang-radio" class="lang-group__input"></input>
+              <span class="lang-group__lang">CH</span>
+            </label>
+
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="main-header">
+          <div class="main-header__headline">
+              <h1 class="main-header__title">Услуги и сервисы</h1>
+              <div class="main-header__btn-group">
+                  <div class="main-header__btn">
+                      <label for="rq-btn">Оставить заявку</label>
+                      <button class="func-btn func-btn--circle func-btn--pink func-btn--request" id="rq-btn"></button>
+                  </div>
+                  <div class="main-header__btn">
+                      <label for="rs-btn">Статус ремонта</label>
+                      <button class="func-btn func-btn--circle func-btn--pink func-btn--repair-status" id="rs-btn"></button>
+                  </div>
+              </div>
+          </div>
+          <nav class="nav">
+              <a class="nav__item" href="#">Ремонтируемые устройства</a>
+              <a class="nav__item" href="#">Дополнительные услуги</a>
+              <a class="nav__item" href="#">Цены на услуги</a>
+              <a class="nav__item" href="#">Специальные цены</a>
+              <a class="nav__item" href="#">Адреса сервисных центров</a>
+              <a class="nav__item" href="#">Отзывы</a>
+          </nav>
+      </div>
+      </main>
 
   </body>
 </html>

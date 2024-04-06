@@ -1,0 +1,53 @@
+
+.func-btn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--circle{
+    border-radius: 50%;
+    border: none;
+  }
+
+  &--pink {
+    background-color: $roseColor;
+  }
+
+
+  &--burger-menu {
+    background-image: url('../img/icons/burger-menu.svg');
+  }
+
+  &--phone {
+    background-image: url('../img/icons/handset.svg');
+  }
+
+  &--message {
+    background-image: url('../img/icons/message.svg');
+    background-position-y: 11px;
+  }
+
+  &--login {
+    background-image: url('../img/icons/login.svg');
+  }
+
+  &--request {
+    background-image: url('../img/icons/request.svg');
+  }
+
+  &--repair-status {
+    background-image: url('../img/icons/repair-status.svg');
+  }
+
+  &--close {
+    background-image: url('../img/icons/close.svg');
+  }
+
+  &--search {
+    background-image: url('../img/icons/search.svg');
+  }
+
+}

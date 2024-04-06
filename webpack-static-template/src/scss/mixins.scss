@@ -1,0 +1,3 @@
+@mixin edge-padding($vertical, $horizontal, $multiplier) {
+  padding: $vertical $horizontal * $multiplier;
+}
