@@ -7,15 +7,17 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  &--circle{
+
+  &--pink-circle {
+    background-color: $roseColor;
     border-radius: 50%;
     border: none;
   }
 
-  &--pink {
-    background-color: $roseColor;
+  &--pink-border-circle {
+    border-color: $roseColor;
+    border-radius: 50%;
   }
-
 
   &--burger-menu {
     background-image: url('../img/icons/burger-menu.svg');
@@ -50,4 +52,7 @@
     background-image: url('../img/icons/search.svg');
   }
 
+  &--details {
+    background-image: url('../img/arrow_to_right.png');
+  }
 }

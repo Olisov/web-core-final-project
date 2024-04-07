@@ -44,10 +44,10 @@ const brandSlider = new Swiper('.brand-list__slider', {
   },
 });
 
-const deviceTypeSlider = new Swiper('.devise-type-list__slider', {
+const deviceTypeSlider = new Swiper('.device-type-list__slider', {
   modules: [Navigation, Pagination],
   pagination: {
-      el: '.devise-type-list__pagination',
+      el: '.device-type-list__pagination',
       clickable: true,
   },
   slidesPerView: 1.2,

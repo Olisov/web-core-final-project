@@ -34,7 +34,6 @@ $desktop-multiplier: 2;
 @import '/modules/body.scss',
         '/modules/func-btn',
         '/modules/more-btn',
-        '/modules/details-btn',
         '/modules/head/header',
         '/modules/aside/aside-nav',
         '/modules/aside/aside-menu',
@@ -49,8 +48,9 @@ $desktop-multiplier: 2;
         '/modules/main/brand-item',
         '/modules/main/swiper-pagination/swiper-pagination-bullet',
         '/modules/main/swiper-pagination/swiper-pagination-bullet-active',
-        '/modules/main/devise-type-list',
-        '/modules/main/devise-type-item';
+        '/modules/main/device-type-list',
+        '/modules/main/device-type-item',
+        '/modules/main/price-list';
 
 
         // @media (min-width: $screen-tablet) {
