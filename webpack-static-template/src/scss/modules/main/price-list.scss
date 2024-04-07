@@ -1,3 +1,48 @@
 .price-list {
-  
+  max-width: $screen-size;
+  box-sizing: border-box;
+
+
+
+  &__title {
+    @include edge-padding(16px, 16px);
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 150%;
+    letter-spacing: -0.01em;
+
+    text-transform: uppercase;
+    color: $grayTextColor;
+    // padding: 16px 0;
+
+    background-image: linear-gradient(to left bottom, white 50%, rgba(200, 200, 200, 0.250));
+
+  }
+
+  &__thead {
+    display: none;
+  }
+
+  &__tbody {
+    padding: 16px 0;
+  }
+
+  &__slider {
+    @include edge-padding(0, 10px);
+    display: block;
+    max-width: $screen-size;
+    position: relative;
+    overflow: hidden;
+    // padding: 16px 0;
+    background-image: linear-gradient(to right top, white 50%, rgba(200, 200, 200, 0.250));
+
+  }
+
+
+  &__pagination {
+    text-align: center;
+  }
+
 }

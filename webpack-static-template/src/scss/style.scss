@@ -12,6 +12,7 @@ $aquamarineLiteColor: #D9FFF5;
 $blackTextColor: #1B1C21;
 $grayTextColor: #7E7E82;
 $liteGrayColor: #EAEAEA;
+$whiteColir: white;
 
 // $paginationColor: #DDDDDD;
 // $activePaginationColor: #B5B6BC;
@@ -34,6 +35,7 @@ $desktop-multiplier: 2;
 @import '/modules/body.scss',
         '/modules/func-btn',
         '/modules/more-btn',
+        '/modules/order-btn',
         '/modules/head/header',
         '/modules/aside/aside-nav',
         '/modules/aside/aside-menu',
@@ -50,7 +52,8 @@ $desktop-multiplier: 2;
         '/modules/main/swiper-pagination/swiper-pagination-bullet-active',
         '/modules/main/device-type-list',
         '/modules/main/device-type-item',
-        '/modules/main/price-list';
+        '/modules/main/price-list',
+        '/modules/main/price-item';
 
 
         // @media (min-width: $screen-tablet) {

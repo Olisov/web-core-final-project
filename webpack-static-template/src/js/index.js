@@ -65,3 +65,26 @@ const deviceTypeSlider = new Swiper('.device-type-list__slider', {
       },
   },
 });
+
+
+const priceTypeSlider = new Swiper('.price-list__slider', {
+  modules: [Navigation, Pagination],
+  pagination: {
+      el: '.price-list__pagination',
+      clickable: true,
+  },
+  slidesPerView: 1.2,
+  spaceBetween: '16px',
+  slidesPerView: 'auto',
+
+  breakpoints: {
+      767: {
+          enabled: true,
+      },
+      768: {
+          slidesPerView: 3,
+          spaceBetween: '0',
+          enabled: false,
+      },
+  },
+});

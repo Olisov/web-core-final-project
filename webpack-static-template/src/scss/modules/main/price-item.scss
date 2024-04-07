@@ -1,0 +1,42 @@
+.price-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  flex-basis: 260px;
+  box-sizing: border-box;
+
+  height: 200px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+
+  &__title {
+    font-family: "TTLakes-medium", sans-serif;
+    opacity: 0.72;
+    font-size: 14px;
+    line-height: 115%;
+    color: $grayTextColor;
+  }
+
+  &__value {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: $blackTextColor;
+    text-align: start;
+    vertical-align: bottom;
+  }
+
+
+  &__deadline {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__btn {
+    align-self: flex-end;
+
+  }
+
+}
