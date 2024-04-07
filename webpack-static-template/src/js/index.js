@@ -21,7 +21,8 @@ showAllBtn.addEventListener('click', () => {
     }
 });
 
-const slider = new Swiper('.brand-list__slider', {
+
+const brandSlider = new Swiper('.brand-list__slider', {
   modules: [Navigation, Pagination],
   pagination: {
       el: '.brand-list__pagination',
@@ -31,10 +32,8 @@ const slider = new Swiper('.brand-list__slider', {
   spaceBetween: '16px',
   slidesPerView: 'auto',
 
-
   breakpoints: {
       767: {
-          slidesPerView: 2,
           enabled: true,
       },
       768: {
@@ -42,6 +41,27 @@ const slider = new Swiper('.brand-list__slider', {
           spaceBetween: '0',
           enabled: false,
       },
+  },
+});
 
+const deviceTypeSlider = new Swiper('.devise-type-list__slider', {
+  modules: [Navigation, Pagination],
+  pagination: {
+      el: '.devise-type-list__pagination',
+      clickable: true,
+  },
+  slidesPerView: 1.2,
+  spaceBetween: '16px',
+  slidesPerView: 'auto',
+
+  breakpoints: {
+      767: {
+          enabled: true,
+      },
+      768: {
+          slidesPerView: 3,
+          spaceBetween: '0',
+          enabled: false,
+      },
   },
 });

@@ -48,7 +48,9 @@ $desktop-multiplier: 2;
         '/modules/main/brand-list',
         '/modules/main/brand-item',
         '/modules/main/swiper-pagination/swiper-pagination-bullet',
-        '/modules/main/swiper-pagination/swiper-pagination-bullet-active';
+        '/modules/main/swiper-pagination/swiper-pagination-bullet-active',
+        '/modules/main/devise-type-list',
+        '/modules/main/devise-type-item';
 
 
         // @media (min-width: $screen-tablet) {
@@ -57,4 +59,4 @@ $desktop-multiplier: 2;
         // @media (min-width: $screen-laptop) {
         // }
 
-        // @include edge-padding(0, 1rem, $tablet-multiplier);
+        // @include edge-padding(0, 1rem);

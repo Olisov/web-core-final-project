@@ -3,7 +3,7 @@
   box-sizing: border-box;
   overflow: auto;
   margin: 0;
-  @include edge-padding(0, 1rem, $mobile-multiplier);
+  @include edge-padding(0, 1rem);
 
   // padding: 1.5rem var(--edge-padding);
   // max-width: 100%;

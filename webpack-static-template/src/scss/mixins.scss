@@ -1,3 +1,11 @@
-@mixin edge-padding($vertical, $horizontal, $multiplier) {
-  padding: $vertical $horizontal * $multiplier;
+@mixin edge-padding($vertical, $horizontal) {
+  padding: $vertical $horizontal * $mobile-multiplier;
+
+  @media (min-width: $screen-tablet) {
+    padding: $vertical $horizontal * $tablet-multiplier;
+  }
+
+  @media (min-width: $screen-laptop) {
+    padding: $vertical $horizontal * $desktop-multiplier;
+  }
 }

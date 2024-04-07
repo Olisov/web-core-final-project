@@ -1,11 +1,11 @@
-.brand-item {
+.devise-type-item {
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   box-sizing: border-box;
   flex-basis: 240px;
-  height: 72px;
+  height: 160px;
   border: 1px solid #eaeaea;
   border-radius: 6px;
 
@@ -20,11 +20,14 @@
   }
 
 
-  &__logo {
-    max-width: 52%;
+  &__name {
+    // max-width: 52%;
+    margin: 0;
+
+    // line-height: 150%;
 
     @media (min-width: $screen-tablet) {
-      max-width: 60%;
+      // max-width: 60%;
     }
 
     @media (min-width: $screen-laptop) {
@@ -32,6 +35,11 @@
 
   }
 
+  &__details {
+    align-self: flex-end;
+
+
+  }
 
 
 }

@@ -9,11 +9,11 @@
   // height: 676px;
   // height: 1024px;
 
-  @include edge-padding(0, 1rem, $mobile-multiplier);
+  @include edge-padding(0, 1rem);
 
 
   @media (min-width: $screen-mobile-wide) {
-    @include edge-padding(0, 1rem, $tablet-multiplier);
+
     max-width: 360px;
   }
 
@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $screen-laptop) {
-    @include edge-padding(0, 1rem, $desktop-multiplier);
+
     display: flex;
     box-shadow: none;
     height: 936px;

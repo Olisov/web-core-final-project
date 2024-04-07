@@ -1,4 +1,5 @@
-.brand-list {
+.devise-type-list {
+
 
   box-sizing: border-box;
   min-width: $screen-size;
@@ -35,27 +36,27 @@
     position: relative;
     overflow: hidden;
     padding: 16px 0;
-
     background-image: linear-gradient(to right top, white 50%, rgba(200, 200, 200, 0.250));
+
   }
 
   &__body {
 
-    height: 72px;
+    // height: 72px;
     // padding: 16px 0;
     padding-bottom: 12px;
 
     @media (min-width: $screen-tablet) {
-      height: 152px;
-      column-gap: 24px;
-      row-gap: 16px;
-      flex-wrap: wrap;
-      overflow: hidden;
+      // height: 152px;
+      // column-gap: 24px;
+      // row-gap: 16px;
+      // flex-wrap: wrap;
+      // overflow: hidden;
       // padding: 24px 0;
     }
 
     @media (min-width: $screen-laptop) {
-      column-gap: 32px;
+      // column-gap: 32px;
       // padding: 24px 0;
     }
 
@@ -92,7 +93,7 @@
 
     &--open {
 
-      width: 94px;
+      // width: 94px;
 
       &::before {
         transform: rotate(180deg);

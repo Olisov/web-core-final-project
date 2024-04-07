@@ -12,7 +12,7 @@
     position: relative;
     margin: 0;
     // padding: 24px 0;
-    @include edge-padding(24px, 1rem, $mobile-multiplier);
+    @include edge-padding(24px, 1rem);
 
     font-family: 'TTLakes-bold', sans-serif;
     font-size: 1.75rem;
