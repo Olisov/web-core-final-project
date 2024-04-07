@@ -1,11 +1,12 @@
-.nav {
+.main-nav {
   display: flex;
   box-sizing: border-box;
-  max-width: $screen-size;
   overflow: auto;
-  // padding: 1.5rem var(--edge-padding);
   margin: 0;
+  @include edge-padding(0, 1rem, $mobile-multiplier);
 
+  // padding: 1.5rem var(--edge-padding);
+  // max-width: 100%;
 
   &::-webkit-scrollbar {
     display: none;
@@ -18,7 +19,14 @@
     white-space: nowrap;
     padding: 0 16px;
     margin-right: 4px;
-  }
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
 
+    &:first-child {
+      border: 2px solid #B8FFEC;
+    }
+
+  }
 
 }

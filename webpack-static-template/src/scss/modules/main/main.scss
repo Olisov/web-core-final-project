@@ -1,10 +1,10 @@
 .main {
-
+  max-width: $screen-size;
 
   // max-width: 100%;
 
   box-sizing: border-box;
-  @include edge-padding(0, 1rem, $mobile-multiplier);
+  // @include edge-padding(0, 1rem, $mobile-multiplier);
 
   @media (min-width: $screen-tablet) {
     @include edge-padding(0, 1rem, $tablet-multiplier);

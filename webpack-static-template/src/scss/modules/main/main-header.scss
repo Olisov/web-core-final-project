@@ -1,0 +1,83 @@
+.main-header {
+
+  &__headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    // padding: 24px 0;
+    @include edge-padding(24px, 1rem, $mobile-multiplier);
+
+    font-family: 'TTLakes-bold', sans-serif;
+    font-size: 1.75rem;
+    line-height: 143%;
+    letter-spacing: -0.02em;
+
+
+    @media (min-width: $screen-tablet) {
+
+    }
+
+    @media (min-width: $screen-laptop) {
+
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 40px;
+      width: 4px;
+      transform: translate(-16px, 0px);
+      background-color: #41F6D7;
+      border-radius: 0 12px 12px 0;
+
+        @media (min-width: $screen-tablet) {
+        }
+
+        @media (min-width: $screen-laptop) {
+        }
+
+    }
+
+  }
+
+
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &:first-child {
+      width: 172px;
+    }
+
+    &:last-child {
+      width: 168px;
+    }
+
+
+    &-group {
+      display: none;
+      width: 373px;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      @media (min-width: $screen-laptop) {
+        display: flex;
+      }
+
+    }
+
+
+
+  }
+
+}

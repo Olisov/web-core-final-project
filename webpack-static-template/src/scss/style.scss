@@ -20,7 +20,7 @@ $screen-mobile-wide: 360px;
 $screen-tablet: 768px;
 $screen-laptop: 1366px;
 $screen-desktop: 1440px;
-$screen-size: $screen-desktop;
+$screen-size: $screen-mobile;
 
 // $edge-padding: 1rem;
 
@@ -29,13 +29,25 @@ $tablet-multiplier: 1.5;
 $desktop-multiplier: 2;
 
 
-@import 'body.scss',
-        'header',
-        'func-btn',
-        'aside-nav',
-        'menu',
-        'contact-info',
-        'lang-group',
-        'main',
-        'main-header',
-        'nav';
+@import '/modules/body.scss',
+        '/modules/func-btn',
+        '/modules/more-btn',
+        '/modules/head/header',
+        '/modules/aside/aside-nav',
+        '/modules/aside/aside-menu',
+        '/modules/aside/contact-info',
+        '/modules/aside/lang-group',
+        '/modules/main/main',
+        '/modules/main/main-header',
+        '/modules/main/main-nav',
+        '/modules/main/about-us',
+        '/modules/main/description',
+        '/modules/main/brand-list',
+        '/modules/main/brand-item';
+
+
+        // @media (min-width: $screen-tablet) {
+        // }
+
+        // @media (min-width: $screen-laptop) {
+        // }

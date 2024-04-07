@@ -1,0 +1,23 @@
+.more-btn {
+  position: relative;
+  width: 131px;
+  padding: 0;
+  text-align: end;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  border: none;
+  background-color: transparent;
+
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 10px;
+    background-image: url("../img/icons/double-arrows.svg");
+    transform: translate(9px, 6px);
+  }
+
+
+}

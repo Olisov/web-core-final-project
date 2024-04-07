@@ -7,6 +7,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Olisov-DV WebCore</title>
   </head>
   <body class="body body--center">
       <header class="header">
@@ -35,15 +36,15 @@
           <button class="func-btn func-btn--circle func-btn--pink func-btn--search"></button>
         </div>
 
-        <menu class="aside-nav__body menu">
-            <a class="menu__href" href="#">Ремонт техники</a>
-            <a class="menu__href" href="#">Услуги и сервисы</a>
-            <a class="menu__href" href="#">Корпоративным клиентам</a>
-            <a class="menu__href" href="#">Продавцам техники</a>
-            <a class="menu__href" href="#">Партнерам</a>
-            <a class="menu__href" href="#">Производителям</a>
-            <a class="menu__href" href="#">Наши сервисные центры</a>
-            <a class="menu__href" href="#">Контакты</a>
+        <menu class="aside-nav__body aside-menu">
+            <a class="aside-menu__href" href="#">Ремонт техники</a>
+            <a class="aside-menu__href" href="#">Услуги и сервисы</a>
+            <a class="aside-menu__href" href="#">Корпоративным клиентам</a>
+            <a class="aside-menu__href" href="#">Продавцам техники</a>
+            <a class="aside-menu__href" href="#">Партнерам</a>
+            <a class="aside-menu__href" href="#">Производителям</a>
+            <a class="aside-menu__href" href="#">Наши сервисные центры</a>
+            <a class="aside-menu__href" href="#">Контакты</a>
         </menu>
 
         <div class="aside-nav__footer">
@@ -89,15 +90,91 @@
                   </div>
               </div>
           </div>
-          <nav class="nav">
-              <a class="nav__item" href="#">Ремонтируемые устройства</a>
-              <a class="nav__item" href="#">Дополнительные услуги</a>
-              <a class="nav__item" href="#">Цены на услуги</a>
-              <a class="nav__item" href="#">Специальные цены</a>
-              <a class="nav__item" href="#">Адреса сервисных центров</a>
-              <a class="nav__item" href="#">Отзывы</a>
+
+          <nav class="main-nav">
+              <a class="main-nav__item" href="#">Ремонтируемые устройства</a>
+              <a class="main-nav__item" href="#">Дополнительные услуги</a>
+              <a class="main-nav__item" href="#">Цены на услуги</a>
+              <a class="main-nav__item" href="#">Специальные цены</a>
+              <a class="main-nav__item" href="#">Адреса сервисных центров</a>
+              <a class="main-nav__item" href="#">Отзывы</a>
           </nav>
-      </div>
+        </div>
+
+        <article class="about-us">
+          <h2 class="about-us__title about-us__title--hidden">О нас</h2>
+          <div class="description">
+              <p class="description__item">
+                  Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                  Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+              </p>
+              <p class="description__item">
+                  Мы успешно работаем с 1992 года и заслужили репутацию надёжного партнёра,
+                  что подтверждает большое количество постоянных клентов. Мы гордимся тем,
+                  что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+              </p>
+              <button class="about-us__more-btn more-btn">Читать далее</button>
+          </div>
+          <img class="about-us__figure" src="img/CPS_door-sign.png" alt="logo_door-sign" width="320">
+        </article>
+
+        <article class="brand-list brand-list--center">
+          <h2 class="brand-list__title">Ремонт техники различных брендов</h2>
+          <div class="brand-list__slider swiper-container">
+              <div class="brand-list__body swiper-wrapper">
+                  <div class="brand-item swiper-slide">
+                      <img class="brand-item__logo" src="img/Lenovo_logo.png" alt="Lenovo logo">
+                      <button class="brand-item__details details-btn"></button>
+                  </div>
+
+                  <div class="brand-item swiper-slide">
+                      <img class="brand-item__logo" src="img/Samsung_logo.png" alt="Lenovo logo">
+                      <button class="brand-item__details details-btn"></button>
+                  </div>
+
+                  <div class="brand-item swiper-slide">
+                      <img class="brand-item__logo" src="img/Apple_logo.png" alt="Apple logo">
+                      <button class="brand-item__details details-btn"></button>
+                  </div>
+
+                  <div class="brand-item swiper-slide">
+                      <img class="brand-item__logo" src="img/ViewSonic_logo.png" alt="ViewSonic logo">
+                      <button class="brand-item__details details-btn"></button>
+                  </div>
+
+                  <div class="brand-item swiper-slide">
+                      <img class="brand-item__logo" src="img/Bosch_logo.png" alt="Bosch logo">
+                      <button class="brand-item__details details-btn"></button>
+                  </div>
+
+                  <div class="brand-item swiper-slide">
+                      <img class="brand-item__logo" src="img/hp_logo.png" alt="hp logo">
+                      <button class="brand-item__details details-btn"></button>
+                  </div>
+
+                  <div class="brand-item swiper-slide">
+                      <img class="brand-item__logo" src="img/acer_logo.png" alt="acer logo">
+                      <button class="brand-item__details details-btn"></button>
+                  </div>
+
+                  <div class="brand-item swiper-slide">
+                      <img class="brand-item__logo" src="img/sony_logo.png" alt="sony logo">
+                      <button class="brand-item__details details-btn"></button>
+                  </div>
+
+                  <div class="brand-item swiper-slide">
+                      <img class="brand-item__logo" src="img/Lenovo_logo.png" alt="Lenovo logo">
+                      <button class="brand-item__details details-btn"></button>
+                  </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+              <button class="show-all-btn">Показать всё</button>
+
+          </div>
+      </article>
+
+
       </main>
 
   </body>
