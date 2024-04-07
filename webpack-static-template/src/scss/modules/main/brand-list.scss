@@ -1,3 +1,106 @@
 .brand-list {
-  
+
+  box-sizing: border-box;
+  min-width: $screen-size;
+  @include edge-padding(0, 1rem, $mobile-multiplier);
+
+
+
+  @media (min-width: $screen-tablet) {
+    min-width: $screen-tablet;
+    @include edge-padding(0, 1rem, $tablet-multiplier);
+  }
+
+  @media (min-width: $screen-laptop) {
+
+    @include edge-padding(0, 1rem, $desktop-multiplier);
+  }
+
+
+  &__title {
+    margin: 0;
+    // font-family: "TTLakes", sans-serif;
+    // font-weight: 400;
+    // font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: $grayTextColor;
+    // padding: 14px 0;
+  }
+
+  &__slider {
+    position: relative;
+    overflow: hidden;
+    // padding-bottom: 16px;
+
+  }
+
+  &__body {
+
+    height: 72px;
+    // padding: 16px 0;
+
+    @media (min-width: $screen-tablet) {
+      height: 152px;
+      column-gap: 24px;
+      row-gap: 16px;
+      flex-wrap: wrap;
+      overflow: hidden;
+      // padding: 24px 0;
+    }
+
+    @media (min-width: $screen-laptop) {
+      column-gap: 32px;
+      // padding: 24px 0;
+    }
+
+
+
+    &--extended {
+      height: auto;
+    }
+  }
+
+  &__more-btn {
+    display: none;
+    position: relative;
+
+
+    @media (min-width: $screen-tablet) {
+      display: block;
+    }
+
+    @media (min-width: $screen-laptop) {
+    }
+
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   height: 24px;
+    //   width: 24px;
+    //   background-image: url('/img/double-arrows.svg');
+    //   background-position: center;
+    //   background-repeat: no-repeat;
+    //   // left: 0px;
+    //   // top: 8px;
+    // }
+
+    &--open {
+
+      width: 94px;
+
+      &::before {
+        transform: rotate(180deg);
+      }
+
+    }
+
+  }
+
+  &__pagination {
+    transform: translateY(45%);
+    justify-content: center;
+  }
+
 }

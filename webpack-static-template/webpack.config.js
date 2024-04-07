@@ -40,6 +40,7 @@ module.exports = {
           'css-loader', // translates CSS into CommonJS
           'postcss-loader', // parse CSS and add vendor prefixes to CSS rules
           'sass-loader', // compiles Sass to CSS, using Node Sass by default
+
         ],
       },
 

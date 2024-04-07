@@ -1,6 +1,8 @@
 
 @import 'normalize.scss',
         'fonts',
+        '../../node_modules/swiper/swiper',
+        '../../node_modules/swiper/modules/pagination.scss',
         'mixins';
 
 $roseColor: #FF3E79;
@@ -32,6 +34,7 @@ $desktop-multiplier: 2;
 @import '/modules/body.scss',
         '/modules/func-btn',
         '/modules/more-btn',
+        '/modules/details-btn',
         '/modules/head/header',
         '/modules/aside/aside-nav',
         '/modules/aside/aside-menu',
@@ -43,7 +46,9 @@ $desktop-multiplier: 2;
         '/modules/main/about-us',
         '/modules/main/description',
         '/modules/main/brand-list',
-        '/modules/main/brand-item';
+        '/modules/main/brand-item',
+        '/modules/main/swiper-pagination/swiper-pagination-bullet',
+        '/modules/main/swiper-pagination/swiper-pagination-bullet-active';
 
 
         // @media (min-width: $screen-tablet) {
@@ -51,3 +56,5 @@ $desktop-multiplier: 2;
 
         // @media (min-width: $screen-laptop) {
         // }
+
+        // @include edge-padding(0, 1rem, $tablet-multiplier);

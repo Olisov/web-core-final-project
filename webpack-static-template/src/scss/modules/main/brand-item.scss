@@ -1,3 +1,37 @@
 .brand-item {
-  
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  flex-basis: 240px;
+  height: 72px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+
+  // padding: 16px;
+
+
+  @media (min-width: $screen-tablet) {
+    flex-basis: 224px;
+  }
+
+  @media (min-width: $screen-laptop) {
+  }
+
+
+  &__logo {
+    max-width: 52%;
+
+    @media (min-width: $screen-tablet) {
+      max-width: 60%;
+    }
+
+    @media (min-width: $screen-laptop) {
+    }
+
+  }
+
+
+
 }
