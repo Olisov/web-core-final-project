@@ -1,6 +1,4 @@
 .device-type-list {
-
-
   box-sizing: border-box;
   // min-width: $screen-size;
   @include edge-padding(0, 1rem);
@@ -8,13 +6,12 @@
   border-bottom: 1px solid $aquamarineLiteColor;
 
   @media (min-width: $screen-tablet) {
-    min-width: $screen-tablet;
+    // min-width: $screen-tablet;  /////
   }
 
-  @media (min-width: $screen-laptop) {
-
+  @media (min-width: $screen-desktop) {
+    padding-bottom: 18px;
   }
-
 
   &__title {
     margin: 0;
@@ -28,25 +25,32 @@
     color: $grayTextColor;
     padding: 16px 0;
 
-    background-image: linear-gradient(to left bottom, white 50%, rgba(200, 200, 200, 0.250));
+    background-image: linear-gradient(
+      to left bottom,
+      white 50%,
+      rgba(200, 200, 200, 0.25)
+    );
   }
 
   &__slider {
     position: relative;
     overflow: hidden;
     padding: 16px 0;
-    background-image: linear-gradient(to right top, white 50%, rgba(200, 200, 200, 0.250));
+    background-image: linear-gradient(
+      to right top,
+      white 50%,
+      rgba(200, 200, 200, 0.25)
+    );
 
     @media (min-width: $screen-tablet) {
       padding: 24px 0;
     }
 
-    // @media (min-width: $screen-laptop) {
+    // @media (min-width: $screen-desktop) {
     // }
   }
 
   &__body {
-
     // height: 72px;
     // padding: 16px 0;
     padding-bottom: 12px;
@@ -62,10 +66,9 @@
     }
 
     @media (min-width: $screen-laptop) {
-      // column-gap: 32px;
+      column-gap: 32px;
       // padding: 24px 0;
     }
-
 
     &--extended {
       height: auto;
@@ -76,14 +79,13 @@
     display: none;
     position: relative;
 
-
     @media (min-width: $screen-tablet) {
       display: block;
       margin-top: 21px;
       margin-bottom: 9px;
     }
 
-    @media (min-width: $screen-laptop) {
+    @media (min-width: $screen-desktop) {
     }
 
     // &::before {
@@ -102,17 +104,13 @@
       transition: transform 300ms ease-out;
     }
 
-
     &--open {
-
       width: 94px;
 
       &::before {
         transform: rotate(180deg);
       }
-
     }
-
   }
 
   &__pagination {
@@ -120,5 +118,4 @@
     text-align: center;
     // justify-content: center;
   }
-
 }

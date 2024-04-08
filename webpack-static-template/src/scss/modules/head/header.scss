@@ -11,7 +11,6 @@
   position: relative;
 
   @media (min-width: $screen-tablet) {
-
   }
 
   @media (min-width: $screen-laptop) {
@@ -19,7 +18,7 @@
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     display: none;
     height: 32px;
@@ -31,11 +30,10 @@
     @media (min-width: $screen-tablet) {
       display: block;
     }
-
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     height: 32px;
@@ -50,13 +48,10 @@
     }
   }
 
-
-
   &__items-group {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 
     &:first-child {
       width: 153px;
@@ -81,7 +76,5 @@
     &:last-child {
       width: 96px;
     }
-
   }
-
 }

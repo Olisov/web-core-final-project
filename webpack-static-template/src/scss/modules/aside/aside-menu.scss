@@ -1,4 +1,4 @@
-.menu {
+.aside-menu {
 
   display: flex;
   row-gap: 24px;
@@ -14,7 +14,7 @@
 
   @media (min-width: $screen-desktop) {
     // padding: 36px 0;
-    row-gap: 25.5px;
+    row-gap: 26px;
   }
 
   &__href {

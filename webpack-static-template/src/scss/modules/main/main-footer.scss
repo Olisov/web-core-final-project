@@ -1,5 +1,5 @@
 .main-footer {
-  font-family: "TTLakes-medium", sans-serif;
+  font-family: 'TTLakes-medium', sans-serif;
   font-size: 14px;
   line-height: 114%;
   text-align: center;
@@ -13,7 +13,6 @@
   flex-direction: column;
   justify-content: space-between;
 
-
   @media (min-width: $screen-tablet) {
     flex-direction: row;
     @include edge-padding(32px, 1rem);
@@ -23,49 +22,41 @@
     align-items: start;
   }
 
-  // @media (min-width: $screen-laptop) {
+  // @media (min-width: $screen-desktop) {
   // }
 
   &__item {
-
-
     @media (min-width: $screen-tablet) {
-
     }
 
     &:first-child {
-
     }
 
-    &:nth-child(2){
-
+    &:nth-child(2) {
       @media (min-width: $screen-tablet) {
         flex-grow: 1;
         text-align: end;
       }
 
+      @media (min-width: $screen-desktop) {
+        text-align: center;
+      }
+
     }
 
     &:last-child {
+      @media (min-width: $screen-tablet) {
+        flex-basis: 250px;
+        text-align: end;
+      }
 
-    @media (min-width: $screen-tablet) {
-      flex-basis: 250px;
-      text-align: end;
-    }
-
-    // @media (min-width: $screen-laptop) {
-    // }
-
+      @media (min-width: $screen-desktop) {
+        flex-basis: 330px;
+      }
     }
 
     &-group {
       align-items: start;
     }
-
   }
-
-
 }
-
-
-

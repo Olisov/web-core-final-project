@@ -2,14 +2,20 @@
   font-family: "TTLakes", sans-serif;
   font-size: 16px;
   color: $blackTextColor;
-  max-width: $screen-desktop;
+  // max-width: $screen-desktop;
 
   // border: 1px solid red;
 
 
-  @media (min-width: $screen-desktop) {
+  @media (min-width: $screen-laptop) {
     display: flex;
+    max-width: $screen-laptop;
   }
+
+  @media (min-width: $screen-desktop) {
+    max-width: $screen-desktop;
+  }
+
 
   &--center {
 

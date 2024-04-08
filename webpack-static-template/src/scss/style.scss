@@ -1,60 +1,44 @@
+@import 'normalize.scss', 'fonts', '../../node_modules/swiper/swiper',
+  '../../node_modules/swiper/modules/pagination.scss', 'mixins';
 
-@import 'normalize.scss',
-        'fonts',
-        '../../node_modules/swiper/swiper',
-        '../../node_modules/swiper/modules/pagination.scss',
-        'mixins';
-
-$roseColor: #FF3E79;
-$aquamarineColor: #41F6D7;
-$aquamarineMediumColor: #B8FFEC;
-$aquamarineLiteColor: #D9FFF5;
-$blackTextColor: #1B1C21;
-$grayTextColor: #7E7E82;
-$liteGrayColor: #EAEAEA;
+$roseColor: #ff3e79;
+$aquamarineColor: #41f6d7;
+$aquamarineMediumColor: #b8ffec;
+$aquamarineLiteColor: #d9fff5;
+$blackTextColor: #1b1c21;
+$grayTextColor: #7e7e82;
+$liteGrayColor: #eaeaea;
 $whiteColir: white;
 
 // $paginationColor: #DDDDDD;
 // $activePaginationColor: #B5B6BC;
-
 
 $screen-mobile: 320px;
 $screen-mobile-wide: 360px;
 $screen-tablet: 768px;
 $screen-laptop: 1366px;
 $screen-desktop: 1440px;
-$screen-size: $screen-tablet;
+$screen-size: $screen-laptop;
 
 // $edge-padding: 1rem;
 
 $mobile-multiplier: 1;
 $tablet-multiplier: 1.5;
 $desktop-multiplier: 2;
+$aside-width: 340px;
 
 
-@import '/modules/body.scss',
-        '/modules/func-btn',
-        '/modules/more-btn',
-        '/modules/order-btn',
-        '/modules/head/header',
-        '/modules/aside/aside-nav',
-        '/modules/aside/aside-menu',
-        '/modules/aside/contact-info',
-        '/modules/aside/lang-group',
-        '/modules/main/main',
-        '/modules/main/main-header',
-        '/modules/main/main-nav',
-        '/modules/main/about-us',
-        '/modules/main/brand-list',
-        '/modules/main/brand-item',
-        '/modules/main/swiper-pagination/swiper-pagination-bullet',
-        '/modules/main/swiper-pagination/swiper-pagination-bullet-active',
-        '/modules/main/device-type-list',
-        '/modules/main/device-type-item',
-        '/modules/main/price-list',
-        '/modules/main/price-item',
-        '/modules/main/main-footer';
-
+@import '/modules/body.scss', '/modules/func-btn', '/modules/more-btn',
+  '/modules/order-btn', '/modules/head/header', '/modules/aside/aside-nav',
+  '/modules/aside/aside-menu', '/modules/aside/contact-info',
+  '/modules/aside/lang-group', '/modules/main/main', '/modules/main/main-header',
+  '/modules/main/main-nav', '/modules/main/about-us', '/modules/main/brand-list',
+  '/modules/main/brand-item',
+  '/modules/main/swiper-pagination/swiper-pagination-bullet',
+  '/modules/main/swiper-pagination/swiper-pagination-bullet-active',
+  '/modules/main/device-type-list', '/modules/main/device-type-item',
+  '/modules/main/price-list', '/modules/main/price-item',
+  '/modules/main/main-footer';
 
 // @media (min-width: $screen-tablet) {
 // }
@@ -62,4 +46,7 @@ $desktop-multiplier: 2;
 // @media (min-width: $screen-laptop) {
 // }
 
-        // @include edge-padding(0, 1rem);
+// @media (min-width: $screen-desktop) {
+// }
+
+// @include edge-padding(0, 1rem);

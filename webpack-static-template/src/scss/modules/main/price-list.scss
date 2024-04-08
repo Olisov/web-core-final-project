@@ -1,5 +1,5 @@
 .price-list {
-  max-width: $screen-size;
+  // max-width: $screen-size;
   box-sizing: border-box;
 
   border-bottom: 1px solid $aquamarineLiteColor;
@@ -10,9 +10,9 @@
     padding-bottom: 40px;
   }
 
-  // @media (min-width: $screen-laptop) {
-  // }
-
+  @media (min-width: $screen-desktop) {
+    padding-bottom: 44px;
+  }
 
   &__title {
     @include edge-padding(16px, 16px);
@@ -27,17 +27,18 @@
     color: $grayTextColor;
     // padding: 16px 0;
 
-    background-image: linear-gradient(to left bottom, white 50%, rgba(200, 200, 200, 0.250));
+    background-image: linear-gradient(
+      to left bottom,
+      white 50%,
+      rgba(200, 200, 200, 0.25)
+    );
 
     @media (min-width: $screen-tablet) {
       // @include edge-padding(16px, 0);
-
     }
 
-    // @media (min-width: $screen-laptop) {
+    // @media (min-width: $screen-desktop) {
     // }
-
-
   }
 
   &__slider {
@@ -45,11 +46,15 @@
     display: block;
     box-sizing: border-box;
 
-    max-width: $screen-size;
+    // max-width: $screen-size;
     position: relative;
     overflow: hidden;
     // padding: 16px 0;
-    background-image: linear-gradient(to right top, white 50%, rgba(200, 200, 200, 0.250));
+    background-image: linear-gradient(
+      to right top,
+      white 50%,
+      rgba(200, 200, 200, 0.25)
+    );
 
     @media (min-width: $screen-tablet) {
       display: flex;
@@ -59,14 +64,10 @@
       // margin: 0 16px;
 
       // border-spacing: 0;
-
     }
 
-    // @media (min-width: $screen-laptop) {
+    // @media (min-width: $screen-desktop) {
     // }
-
-
-
   }
 
   &__thead {
@@ -74,7 +75,7 @@
     padding-top: 16px;
     flex-direction: column;
 
-    font-family: "TTLakes-medium", sans-serif;
+    font-family: 'TTLakes-medium', sans-serif;
     font-size: 14px;
     line-height: 114%;
     color: $grayTextColor;
@@ -88,7 +89,6 @@
   }
 
   &__tbody {
-
     display: flex;
     column-gap: 16px;
     padding: 16px 0;
@@ -103,9 +103,8 @@
       flex-direction: column;
     }
 
-    // @media (min-width: $screen-laptop) {
+    // @media (min-width: $screen-desktop) {
     // }
-
   }
 
   &__pagination {
@@ -115,15 +114,17 @@
   &__note {
     @include edge-padding(8px, 16px);
 
-
     @media (min-width: $screen-tablet) {
       width: 420px;
       padding-top: 6px;
       // padding-bottom: 24px;
     }
 
+    @media (min-width: $screen-desktop) {
+      padding-top: 14px;
+    }
 
-    &-desc{
+    &-desc {
       margin: 0;
       font-size: 14px;
       line-height: 143%;
@@ -133,12 +134,10 @@
       @media (min-width: $screen-tablet) {
         padding-bottom: 9px;
       }
-
     }
 
     &-offer-btn {
-
-      font-family: "TTLakes-medium", sans-serif;
+      font-family: 'TTLakes-medium', sans-serif;
       // font-size: 16px;
       line-height: 80%;
       letter-spacing: -0.01em;
@@ -147,12 +146,11 @@
       background-color: transparent;
       padding: 0;
 
-
       // @media (min-width: $screen-tablet) {
 
       // }
 
-      // @media (min-width: $screen-laptop) {
+      // @media (min-width: $screen-desktop) {
       // }
 
       &-arrow {
@@ -169,11 +167,7 @@
           background-repeat: no-repeat;
           transform: translate(-4px, 8px);
         }
-
       }
     }
   }
-
-
-
 }

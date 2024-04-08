@@ -1,5 +1,5 @@
 .main {
-  max-width: $screen-size;
+  // max-width: $screen-size;
 
   // padding-bottom: 1000px;
 
@@ -10,17 +10,17 @@
 
   @media (min-width: $screen-tablet) {
     // @include edge-padding(0, 1rem);
+    // max-width: calc(100vw - 340px);
   }
 
   @media (min-width: $screen-laptop) {
-
     // max-width: 1040px;
+    // max-width: calc(100% - 320px);
     max-width: calc(100% - 320px);
+
   }
 
   @media (min-width: $screen-desktop) {
-
     // max-width: 1120px;
   }
-
 }

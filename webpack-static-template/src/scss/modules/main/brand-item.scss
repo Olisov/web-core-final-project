@@ -1,5 +1,4 @@
 .brand-item {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,14 +10,18 @@
 
   padding: 16px;
 
-
   @media (min-width: $screen-tablet) {
     flex-basis: 224px;
+    flex-grow: 1;
   }
+
+  // @media (min-width: 1000px) {
+  //   flex-basis: 240px;
+
+  // }
 
   @media (min-width: $screen-laptop) {
   }
-
 
   &__logo {
     max-width: 52%;
@@ -27,11 +30,7 @@
       max-width: 60%;
     }
 
-    @media (min-width: $screen-laptop) {
+    @media (min-width: $screen-desktop) {
     }
-
   }
-
-
-
 }

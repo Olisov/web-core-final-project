@@ -11,8 +11,6 @@
   border-radius: 6px;
 
   @media (min-width: $screen-tablet) {
-
-
     flex-direction: row;
     flex-basis: 100%;
     align-items: center;
@@ -20,8 +18,10 @@
     border-bottom: 1px solid $liteGrayColor;
   }
 
-  // @media (min-width: $screen-laptop) {
-  // }
+  @media (min-width: $screen-desktop) {
+    padding-right: 28px;
+
+  }
 
   &__type {
     flex-basis: 350px;
@@ -33,6 +33,12 @@
     // flex-grow: 1;
     text-align: start;
     flex-basis: 75px;
+
+    @media (min-width: $screen-desktop) {
+
+      flex-basis: 95px;
+    }
+
   }
 
   &__deadline {
@@ -43,26 +49,29 @@
     text-align: start;
     flex-basis: 220px;
 
-    @media (min-width: $screen-tablet) {
-      // display: table-cell;
+    // @media (min-width: $screen-tablet) {
 
-    }
-
-    // @media (min-width: $screen-laptop) {
     // }
+
+    @media (min-width: $screen-desktop) {
+
+      flex-basis: 310px;
+    }
 
     &-thead {
       flex-basis: 220px;
       text-align: start;
+
+      @media (min-width: $screen-desktop) {
+
+        flex-basis: 310px;
+      }
     }
 
-      &-group {
-        display: flex;
-        flex-direction: column;
-      }
-
-
-
+    &-group {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__free-space {
@@ -70,7 +79,7 @@
   }
 
   &__title {
-    font-family: "TTLakes-medium", sans-serif;
+    font-family: 'TTLakes-medium', sans-serif;
     opacity: 0.72;
     font-size: 14px;
     line-height: 115%;
@@ -78,12 +87,10 @@
 
     @media (min-width: $screen-tablet) {
       display: none;
-
     }
 
-    // @media (min-width: $screen-laptop) {
+    // @media (min-width: $screen-desktop) {
     // }
-
   }
 
   &__value {
@@ -96,12 +103,8 @@
 
     @media (min-width: $screen-tablet) {
       display: table-cell;
-
     }
   }
-
-
-
 
   &__btn {
     align-self: flex-end;
@@ -110,10 +113,7 @@
       display: table-cell;
     }
 
-    // @media (min-width: $screen-laptop) {
+    // @media (min-width: $screen-desktop) {
     // }
-
-
   }
-
 }

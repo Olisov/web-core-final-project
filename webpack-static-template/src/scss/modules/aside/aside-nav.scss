@@ -1,4 +1,3 @@
-
 .aside-nav {
   display: none;
   flex-direction: column;
@@ -11,9 +10,7 @@
 
   @include edge-padding(0, 1rem);
 
-
   @media (min-width: $screen-mobile-wide) {
-
     max-width: 360px;
   }
 
@@ -23,14 +20,11 @@
   }
 
   @media (min-width: $screen-laptop) {
-
     display: flex;
     box-shadow: none;
     height: 936px;
     position: sticky;
   }
-
-
 
   &__header {
     display: flex;
@@ -40,7 +34,7 @@
 
     @media (min-width: $screen-mobile-wide) {
       padding: 16px 0;
-     }
+    }
 
     @media (min-width: $screen-tablet) {
       margin-bottom: 25px;
@@ -50,28 +44,23 @@
       margin-bottom: 11px;
     }
 
-
-    &-close-btn{
-
-      @media (min-width: $screen-laptop) {
+    &-close-btn {
+      @media (min-width: $screen-desktop) {
         display: none;
       }
     }
 
-    &-logo{
-
+    &-logo {
       @media (min-width: $screen-mobile-wide) {
         width: 103px;
         height: 55px;
-       }
+      }
 
-       @media (min-width: $screen-tablet) {
+      @media (min-width: $screen-tablet) {
         width: auto;
         height: auto;
       }
-
     }
-
 
     &-group {
       display: flex;
@@ -81,18 +70,16 @@
 
       @media (min-width: $screen-mobile-wide) {
         width: 160px;
-       }
+      }
 
       @media (min-width: $screen-tablet) {
         width: 154px;
       }
     }
-
   }
 
   &__footer {
     margin-top: auto;
     padding-bottom: 28px;
   }
-
 }
