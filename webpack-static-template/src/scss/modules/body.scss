@@ -7,13 +7,13 @@
   // border: 1px solid red;
 
 
-  @media (min-width: $screen-laptop) {
+  @media (min-width: $screen-desktop) {
     display: flex;
   }
 
   &--center {
 
-    @media (min-width: $screen-laptop) {
+    @media (min-width: $screen-desktop) {
       margin: 0 auto;
     }
   }

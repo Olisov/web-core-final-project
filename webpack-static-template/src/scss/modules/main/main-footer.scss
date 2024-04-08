@@ -1,0 +1,71 @@
+.main-footer {
+  font-family: "TTLakes-medium", sans-serif;
+  font-size: 14px;
+  line-height: 114%;
+  text-align: center;
+  color: $grayTextColor;
+  opacity: 0.72;
+  height: 142px;
+  padding: 16px 0;
+
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  @media (min-width: $screen-tablet) {
+    flex-direction: row;
+    @include edge-padding(32px, 1rem);
+    height: auto;
+
+    text-align: start;
+    align-items: start;
+  }
+
+  // @media (min-width: $screen-laptop) {
+  // }
+
+  &__item {
+
+
+    @media (min-width: $screen-tablet) {
+
+    }
+
+    &:first-child {
+
+    }
+
+    &:nth-child(2){
+
+      @media (min-width: $screen-tablet) {
+        flex-grow: 1;
+        text-align: end;
+      }
+
+    }
+
+    &:last-child {
+
+    @media (min-width: $screen-tablet) {
+      flex-basis: 250px;
+      text-align: end;
+    }
+
+    // @media (min-width: $screen-laptop) {
+    // }
+
+    }
+
+    &-group {
+      align-items: start;
+    }
+
+  }
+
+
+}
+
+
+

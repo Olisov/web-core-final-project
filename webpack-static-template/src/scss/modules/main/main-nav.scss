@@ -8,6 +8,18 @@
   // padding: 1.5rem var(--edge-padding);
   // max-width: 100%;
 
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 8px;
+    padding-bottom: 7px;
+
+  }
+
+  @media (min-width: $screen-laptop) {
+  }
+
+
+
   &::-webkit-scrollbar {
     display: none;
   }

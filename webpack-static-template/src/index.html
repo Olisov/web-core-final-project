@@ -102,13 +102,13 @@
         </div>
 
         <article class="about-us">
-          <h2 class="about-us__title about-us__title--hidden">О нас</h2>
-          <div class="description">
-              <p class="description__item">
+          <h2 class="about-us__title">О нас</h2>
+          <div class="about-us__desc">
+              <p class="about-us__desc-item">
                   Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                   Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
               </p>
-              <p class="description__item">
+              <p class="about-us__desc-item">
                   Мы успешно работаем с 1992 года и заслужили репутацию надёжного партнёра,
                   что подтверждает большое количество постоянных клентов. Мы гордимся тем,
                   что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
@@ -231,11 +231,11 @@
 
           <table class="price-list__slider swiper-container">
             <thead class="price-list__thead">
-              <tr class="price-list__thead-header">
-                <th class="price-list__thead-type">Ремонтные услуги</th>
-                <th class="price-list__thead-cost">Цена</th>
-                <th class="price-list__thead-deadline">Срок</th>
-                <th class="price-list__thead-btn order-btn"></th>
+              <tr class="price-item">
+                <th class="price-item__type">Ремонтные услуги</th>
+                <th class="price-item__cost">Цена</th>
+                <th class="price-item__deadline-thead">Срок</th>
+                <!-- <th class="price-item__free-space"></th> -->
               </tr>
             </thead>
             <tbody class="price-list__tbody swiper-wrapper">
@@ -329,13 +329,46 @@
                   <div class="price-item__btn order-btn">Заказать</div>
                 </td>
               </tr>
-
             </tbody>
           </table>
           <div class="price-list__pagination"></div>
 
+
+          <div class="price-list__note">
+            <p class="price-list__note-desc">
+              Все цены указаны с учетом НДС.
+              Стоимость ремонта указана на единичную услугу.
+              Для получения коммерческого предложения на постоянное обслуживание,
+              оставьте заявку.
+            </p>
+            <button class="price-list__note-offer-btn">
+              Получить коммерческое предложение
+              <span class="price-list__note-offer-btn-arrow"></span>
+            </button>
+          </div>
+
         </article>
 
+        <div class="main-footer">
+
+          <div class="main-footer__item-group">
+            <div class="main-footer__item">
+              © 2019 CPS
+            </div>
+
+            <div class="main-footer__item">
+              Разработано командой Apesong
+            </div>
+          </div>
+
+          <div class="main-footer__item">
+            Политика конфиденциальности
+          </div>
+
+          <div class="main-footer__item">
+            Информация, размещенная на данной странице, не является публичной офертой
+          </div>
+        </div>
       </main>
 
   </body>

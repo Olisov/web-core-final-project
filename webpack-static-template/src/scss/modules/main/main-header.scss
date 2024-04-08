@@ -39,6 +39,7 @@
       border-radius: 0 12px 12px 0;
 
         @media (min-width: $screen-tablet) {
+          transform: translate(-24px, 0px);
         }
 
         @media (min-width: $screen-laptop) {

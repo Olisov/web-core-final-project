@@ -37,6 +37,14 @@
     padding: 16px 0;
 
     background-image: linear-gradient(to right top, white 50%, rgba(200, 200, 200, 0.250));
+
+    @media (min-width: $screen-tablet) {
+      padding: 28px 0;
+
+    }
+
+    // @media (min-width: $screen-laptop) {
+    // }
   }
 
   &__body {
@@ -44,6 +52,7 @@
     height: 72px;
     // padding: 16px 0;
     padding-bottom: 12px;
+    // transition: all 2s ease-out;
 
     @media (min-width: $screen-tablet) {
       height: 152px;
@@ -52,6 +61,8 @@
       flex-wrap: wrap;
       overflow: hidden;
       // padding: 24px 0;
+      
+      transform: none !important;
     }
 
     @media (min-width: $screen-laptop) {
@@ -59,11 +70,11 @@
       // padding: 24px 0;
     }
 
-
-
     &--extended {
       height: auto;
     }
+
+
   }
 
   &__more-btn {
@@ -71,11 +82,18 @@
     position: relative;
 
 
+
     @media (min-width: $screen-tablet) {
       display: block;
+      margin-top: 20px;
+      margin-bottom: 6px;
     }
 
     @media (min-width: $screen-laptop) {
+    }
+
+    &::before {
+      transition: transform 300ms ease-out;
     }
 
     // &::before {
@@ -93,11 +111,9 @@
     &--open {
 
       width: 94px;
-
       &::before {
         transform: rotate(180deg);
       }
-
     }
 
   }

@@ -23,7 +23,7 @@ $screen-mobile-wide: 360px;
 $screen-tablet: 768px;
 $screen-laptop: 1366px;
 $screen-desktop: 1440px;
-$screen-size: $screen-mobile;
+$screen-size: $screen-tablet;
 
 // $edge-padding: 1rem;
 
@@ -45,7 +45,6 @@ $desktop-multiplier: 2;
         '/modules/main/main-header',
         '/modules/main/main-nav',
         '/modules/main/about-us',
-        '/modules/main/description',
         '/modules/main/brand-list',
         '/modules/main/brand-item',
         '/modules/main/swiper-pagination/swiper-pagination-bullet',
@@ -53,13 +52,14 @@ $desktop-multiplier: 2;
         '/modules/main/device-type-list',
         '/modules/main/device-type-item',
         '/modules/main/price-list',
-        '/modules/main/price-item';
+        '/modules/main/price-item',
+        '/modules/main/main-footer';
 
 
-        // @media (min-width: $screen-tablet) {
-        // }
+// @media (min-width: $screen-tablet) {
+// }
 
-        // @media (min-width: $screen-laptop) {
-        // }
+// @media (min-width: $screen-laptop) {
+// }
 
         // @include edge-padding(0, 1rem);

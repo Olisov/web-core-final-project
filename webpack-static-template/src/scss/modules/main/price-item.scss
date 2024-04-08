@@ -7,8 +7,67 @@
   box-sizing: border-box;
 
   height: 200px;
-  border: 1px solid #eaeaea;
+  border: 1px solid $liteGrayColor;
   border-radius: 6px;
+
+  @media (min-width: $screen-tablet) {
+
+
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid $liteGrayColor;
+  }
+
+  // @media (min-width: $screen-laptop) {
+  // }
+
+  &__type {
+    flex-basis: 350px;
+    text-align: start;
+    // flex-grow: 1;
+  }
+
+  &__cost {
+    // flex-grow: 1;
+    text-align: start;
+    flex-basis: 75px;
+  }
+
+  &__deadline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // flex-grow: 1;
+    text-align: start;
+    flex-basis: 220px;
+
+    @media (min-width: $screen-tablet) {
+      // display: table-cell;
+
+    }
+
+    // @media (min-width: $screen-laptop) {
+    // }
+
+    &-thead {
+      flex-basis: 220px;
+      text-align: start;
+    }
+
+      &-group {
+        display: flex;
+        flex-direction: column;
+      }
+
+
+
+  }
+
+  &__free-space {
+    // flex-basis: 120px;
+  }
 
   &__title {
     font-family: "TTLakes-medium", sans-serif;
@@ -16,6 +75,15 @@
     font-size: 14px;
     line-height: 115%;
     color: $grayTextColor;
+
+    @media (min-width: $screen-tablet) {
+      display: none;
+
+    }
+
+    // @media (min-width: $screen-laptop) {
+    // }
+
   }
 
   &__value {
@@ -25,17 +93,26 @@
     color: $blackTextColor;
     text-align: start;
     vertical-align: bottom;
+
+    @media (min-width: $screen-tablet) {
+      display: table-cell;
+
+    }
   }
 
 
-  &__deadline {
-    display: flex;
-    justify-content: space-between;
 
-  }
 
   &__btn {
     align-self: flex-end;
+
+    @media (min-width: $screen-tablet) {
+      display: table-cell;
+    }
+
+    // @media (min-width: $screen-laptop) {
+    // }
+
 
   }
 
