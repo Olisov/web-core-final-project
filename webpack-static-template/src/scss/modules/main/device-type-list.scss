@@ -55,8 +55,10 @@
     // padding: 16px 0;
     padding-bottom: 12px;
 
+    transition: max-height 800ms ease-out;
+
     @media (min-width: $screen-tablet) {
-      height: 152px;
+      max-height: 152px;
       column-gap: 24px;
       row-gap: 16px;
       flex-wrap: wrap;
@@ -71,7 +73,7 @@
     }
 
     &--extended {
-      height: auto;
+      max-height: 550px;
     }
   }
 
