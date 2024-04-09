@@ -1,0 +1,131 @@
+.feetback {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 320px;
+  padding: 0 16px;
+  padding-top: 82px;
+
+
+  @media (min-width: $screen-tablet) {
+    padding: 0 32px;
+    max-width: 440px;
+
+    margin: 0 auto; //////////
+
+    max-height: 100vh; //////
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 24px;
+
+    @media (min-width: $screen-tablet) {
+      transform: translate(-106px, -8px);
+    }
+
+
+  }
+
+  &__title {
+    margin: 0;
+    padding: 24px 0;
+    position: relative;
+
+    font-family: "TTLakes-bold", sans-serif;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: -0.03em;
+    color: $blackTextColor;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 40px;
+      width: 4px;
+      transform: translate(-16px, -10px);
+      background-color: $aquamarineColor;
+      border-radius: 0 12px 12px 0;
+
+      @media (min-width: $screen-tablet) {
+        transform: translate(-34px, -8px);
+      }
+
+    }
+
+
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+
+    &-submit {
+
+      width: 136px;
+      padding: 8px;
+      padding-left: 20px;
+      align-self: flex-end;
+
+
+      @media (min-width: $screen-tablet) {
+        margin-top: 6px;
+      }
+
+      &::after {
+        transform: translate(3px, -3px);
+
+      }
+
+    }
+
+
+    &-item {
+
+      border: 1px solid $liteGrayColor;
+      border-radius: 8px;
+      flex-basis: 48px;
+      box-sizing: border-box;
+      padding: 12px 16px;
+
+
+      &:nth-child(4) {
+        flex-basis: 118px;
+        resize: none;
+
+      }
+
+
+      &::placeholder {
+        font-family: "TTLakes-medium", sans-serif;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+        color: $GrayColor;
+
+        &:nth-child(4) {
+          // margin-bottom: auto;
+
+        }
+      }
+    }
+
+    &-rules {
+      margin: 0;
+
+      font-family: "TTLakes-medium", sans-serif;
+      font-size: 14px;
+      line-height: 114%;
+      color: $grayTextColor;
+
+      &-anchor {
+        color: $roseColor;
+      }
+
+    }
+
+  }
+
+}

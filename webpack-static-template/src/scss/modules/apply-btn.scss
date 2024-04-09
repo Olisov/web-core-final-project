@@ -1,21 +1,16 @@
-.order-btn {
-  width: 119px;
-  height: 32px;
-  background-color: $roseColor;
-  padding: 8px 12px;
+.apply-btn {
+  font-family: 'TTLakes-bold', sans-serif;
+  font-size: 12px;
+
   position: relative;
   box-sizing: border-box;
+  border: none;
 
-  font-family: "TTLakes-bold", sans-serif;
-  font-size: 12px;
 
   letter-spacing: -0.01em;
   text-transform: uppercase;
   text-align: left;
   vertical-align: middle;
-  color: $whiteColir;
-  border-radius: 16px;
-
 
   &::after {
     content: '';
@@ -25,14 +20,20 @@
     background-image: url('../img/icons/white_arrow_to_right.svg');
     background-position: center;
     background-repeat: no-repeat;
-    transform: translate(6px, -3px);
+  }
+
+
+  &--pink-ellips {
+    background-color: $roseColor;
+    color: $whiteColir;
+    border-radius: 16px;
   }
 
 
   &:hover {
     cursor: pointer;
   }
-
-
 }
+
+
 

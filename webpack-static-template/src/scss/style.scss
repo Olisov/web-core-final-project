@@ -8,6 +8,7 @@ $aquamarineLiteColor: #d9fff5;
 $blackTextColor: #1b1c21;
 $grayTextColor: #7e7e82;
 $liteGrayColor: #eaeaea;
+$GrayColor: #B5B6BC;
 $whiteColir: white;
 
 // $paginationColor: #DDDDDD;
@@ -25,11 +26,10 @@ $screen-size: $screen-laptop;
 $mobile-multiplier: 1;
 $tablet-multiplier: 1.5;
 $desktop-multiplier: 2;
-$aside-width: 340px;
-
+// $aside-width: 340px;
 
 @import '/modules/body.scss', '/modules/func-btn', '/modules/more-btn',
-  '/modules/order-btn', '/modules/head/header', '/modules/aside/aside-nav',
+  '/modules/apply-btn', '/modules/head/header', '/modules/aside/aside-nav',
   '/modules/aside/aside-menu', '/modules/aside/contact-info',
   '/modules/aside/lang-group', '/modules/main/main', '/modules/main/main-header',
   '/modules/main/main-nav', '/modules/main/about-us', '/modules/main/brand-list',
@@ -38,7 +38,9 @@ $aside-width: 340px;
   '/modules/main/swiper-pagination/swiper-pagination-bullet-active',
   '/modules/main/device-type-list', '/modules/main/device-type-item',
   '/modules/main/price-list', '/modules/main/price-item',
-  '/modules/main/main-footer';
+  '/modules/main/main-footer', '/modules/feetback.scss';
+
+
 
 // @media (min-width: $screen-tablet) {
 // }
@@ -50,3 +52,5 @@ $aside-width: 340px;
 // }
 
 // @include edge-padding(0, 1rem);
+
+

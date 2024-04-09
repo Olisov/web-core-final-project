@@ -108,12 +108,23 @@
 
   &__btn {
     align-self: flex-end;
+    width: 119px;
+    height: 32px;
+
+    padding: 8px 12px;
 
     @media (min-width: $screen-tablet) {
-      display: table-cell;
+      // display: table-cell;
     }
 
     // @media (min-width: $screen-desktop) {
     // }
+
+    &::after {
+      content: '';
+
+      transform: translate(6px, -3px);
+    }
+
   }
 }
