@@ -3,28 +3,60 @@
   flex-direction: column;
   box-sizing: border-box;
   min-width: 320px;
+  width: 100%;
+  z-index: -1;
+  // max-width: 100%;
+
 
   height: 100vh;
   // height: 676px;
   // height: 1024px;
 
+  // position: relative;
+
+  // left: -320px;
+
+  transform: translateX(-320px);
+  display: flex;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 1s;
+
   @include edge-padding(0, 1rem);
 
-  @media (min-width: $screen-mobile-wide) {
-    max-width: 360px;
-  }
+  // @media (min-width: $screen-mobile-wide) {
+  //   // min-width: 360px;
+  // }
 
   @media (min-width: $screen-tablet) {
     max-width: 320px;
-    box-shadow: 20px 0px 80px gray;
+    box-shadow: 20px 0px 80px $GrayColor;
   }
 
   @media (min-width: $screen-laptop) {
-    display: flex;
+    position: relative;
+
     box-shadow: none;
+    opacity: 1;
+    transform: translateX(0);
     height: 936px;
-    position: sticky;
   }
+
+
+  &--modal {
+
+    z-index: 10;
+    background-color: $whiteColir;
+
+    transform: translateX(0);
+    opacity: 1;
+
+    @media (min-width: $screen-laptop) {
+
+    }
+  }
+
 
   &__header {
     display: flex;
@@ -32,29 +64,29 @@
     justify-content: space-between;
     padding: 18px 0;
 
-    @media (min-width: $screen-mobile-wide) {
-      padding: 16px 0;
-    }
+    // @media (min-width: $screen-mobile-wide) {
+    //   padding: 16px 0;
+    // }
 
     @media (min-width: $screen-tablet) {
       margin-bottom: 25px;
     }
 
-    @media (min-width: $screen-desktop) {
+    @media (min-width: $screen-laptop) {
       margin-bottom: 11px;
     }
 
     &-close-btn {
-      @media (min-width: $screen-desktop) {
+      @media (min-width: $screen-laptop) {
         display: none;
       }
     }
 
     &-logo {
-      @media (min-width: $screen-mobile-wide) {
-        width: 103px;
-        height: 55px;
-      }
+      // @media (min-width: $screen-mobile-wide) {
+      //   width: 103px;
+      //   height: 55px;
+      // }
 
       @media (min-width: $screen-tablet) {
         width: auto;
@@ -68,9 +100,9 @@
       align-items: center;
       justify-content: space-between;
 
-      @media (min-width: $screen-mobile-wide) {
-        width: 160px;
-      }
+      // @media (min-width: $screen-mobile-wide) {
+      //   width: 160px;
+      // }
 
       @media (min-width: $screen-tablet) {
         width: 154px;

@@ -10,12 +10,13 @@ $grayTextColor: #7e7e82;
 $liteGrayColor: #eaeaea;
 $GrayColor: #B5B6BC;
 $whiteColir: white;
+$blureColir: rgba(255, 255, 255, 0.75);
 
 // $paginationColor: #DDDDDD;
 // $activePaginationColor: #B5B6BC;
 
 $screen-mobile: 320px;
-$screen-mobile-wide: 360px;
+// $screen-mobile-wide: 360px;
 $screen-tablet: 768px;
 $screen-laptop: 1366px;
 $screen-desktop: 1440px;
@@ -28,7 +29,8 @@ $tablet-multiplier: 1.5;
 $desktop-multiplier: 2;
 // $aside-width: 340px;
 
-@import '/modules/body.scss', '/modules/func-btn', '/modules/more-btn',
+
+@import '/modules/body.scss', '/modules/blure.scss', '/modules/func-btn', '/modules/more-btn',
   '/modules/apply-btn', '/modules/head/header', '/modules/aside/aside-nav',
   '/modules/aside/aside-menu', '/modules/aside/contact-info',
   '/modules/aside/lang-group', '/modules/main/main', '/modules/main/main-header',
@@ -38,7 +40,7 @@ $desktop-multiplier: 2;
   '/modules/main/swiper-pagination/swiper-pagination-bullet-active',
   '/modules/main/device-type-list', '/modules/main/device-type-item',
   '/modules/main/price-list', '/modules/main/price-item',
-  '/modules/main/main-footer', '/modules/feetback.scss';
+  '/modules/main/main-footer', '/modules/connectWithUs.scss';
 
 
 

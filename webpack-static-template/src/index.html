@@ -10,6 +10,8 @@
     <title>Olisov-DV WebCore</title>
   </head>
   <body class="body body--center">
+    <div class="blure "></div>
+
     <header class="header" >
       <div class="header__items-group">
         <button class="func-btn func-btn--pink-circle func-btn--burger-menu"></button>
@@ -26,10 +28,11 @@
       </div>
     </header>
 
-    <aside class="aside-nav" >
+    <aside class="aside-nav " >
+
       <div class="aside-nav__header">
         <div class="aside-nav__header-group">
-          <button class="aside-nav__header-close-btn func-btn func-btn--pink-circle func-btn--close"></button>
+          <button class="aside-nav__header-close-btn func-btn func-btn--pink-circle func-btn--close" id="close-aside-btn"></button>
           <img class="aside-nav__header-logo" src="./img/icons/logo.svg" alt="CPS Logo" width="97" height="51">
         </div>
         <button class="func-btn func-btn--pink-circle func-btn--search"></button>
@@ -374,42 +377,23 @@
       </div>
     </main>
 
-    <article class="feetback" style="display: none;">
-      <h2 class="feetback__title">Обратная связь</h2>
-
-      <form class="feetback__form">
-        <input style="display: none;" type="text" required disabled class="feetback__form-item" name="name" placeholder="Имя">
-        <input type="number" disabled class="feetback__form-item" name="phone" placeholder="Телефон">
-        <input type="email" class="feetback__form-item" name="email" placeholder="Электронная почта">
-        <textarea type="text" class="feetback__form-item" name="message" placeholder="Сообщение"></textarea>
-        <p class="feetback__form-rules">
+    <article class="connectWithUs ">
+      <h2 class="connectWithUs__title">Обратная связь</h2>
+      <form class="connectWithUs__form">
+        <input type="text" id="connectWithUsFormName" class="connectWithUs__form-item" name="name" placeholder="Имя">
+        <input type="number" id="connectWithUsFormPhoneNum" class="connectWithUs__form-item" name="phone" placeholder="Телефон">
+        <input type="email" id="connectWithUsFormEmail" class="connectWithUs__form-item" name="email" placeholder="Электронная почта">
+        <textarea type="text" id="connectWithUsFormMessage" class="connectWithUs__form-item" name="message" placeholder="Сообщение"></textarea>
+        <p class="connectWithUs__form-rules">
           Нажимая “отправить”, вы даете согласие на
-          <a href="#" class="feetback__form-rules-anchor">обработку персональных данных</a>
+          <a href="#" class="connectWithUs__form-rules-anchor">обработку персональных данных</a>
           и соглашаетесь с нашей
-          <a href="#" class="feetback__form-rules-anchor">политикой конфиденциальности</a>
+          <a href="#" class="connectWithUs__form-rules-anchor">политикой конфиденциальности</a>
         </p>
-        <button type="submit" class="feetback__form-submit apply-btn apply-btn--pink-ellips">Отправить</button>
-        <button class="feetback__close-btn func-btn func-btn--pink-circle func-btn--close"></button>
+        <button type="submit" class="connectWithUs__form-submit apply-btn apply-btn--pink-ellips">Отправить</button>
+        <button type="button" class="connectWithUs__close-btn func-btn func-btn--pink-circle func-btn--close"></button>
       </form>
     </article>
-
-
-    <!-- <article class="request-call">
-      <h2 class="request-call__title">Обратная связь</h2>
-
-      <form class="request-call__form">
-        <input type="number" class="request-call__form-phone" name="phone" placeholder="Телефон">
-        <p class="request-call__form-rules">
-          Нажимая “отправить”, вы даете согласие на
-          <a href="#" class="request-call__form-rules-anchor">обработку персональных данных</a>
-          и соглашаетесь с нашей
-          <a href="#" class="request-call__form-rules-anchor">политикой конфиденциальности</a>
-        </p>
-        <button type="submit" class="request-call__form-submit apply-btn">Отправить</button>
-        <button class="request-call__close-btn func-btn func-btn--pink-circle func-btn--close"></button>
-      </form>
-    </article> -->
-
 
   </body>
 </html>

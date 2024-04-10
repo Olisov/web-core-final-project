@@ -1,0 +1,15 @@
+.blure {
+  display: none;
+  position: absolute;
+  background-color: $blureColir;
+  z-index: 2;
+
+
+  &--active {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+  }
+
+}
