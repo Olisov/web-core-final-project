@@ -24,12 +24,16 @@
   &__desc {
     // padding-top: 24px;
 
+
     @media (min-width: $screen-tablet) {
-      width: 313px;
+      // max-width: 313px;
+      // max-height: 120px;
+      max-width: 47%;
+
     }
 
     @media (min-width: $screen-desktop) {
-      width: 490px;
+      // max-width: 490px;
       // padding-top: 11px;
     }
 
@@ -51,27 +55,53 @@
         // margin-bottom: 20px;
       }
 
+
+      &-group {
+
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 800ms ease-out;
+
+        @media (min-width: $screen-tablet) {
+          max-height: 120px;
+
+          margin-bottom: 11px;
+        }
+
+        @media (min-width: $screen-laptop) {
+          max-height: 160px;
+
+          margin-bottom: 14px;
+        }
+
+        &--extended {
+          max-height: 250px;
+
+        }
+
+      }
+
       &:first-child {
 
         @media (min-width: $screen-tablet) {
-          padding-bottom: 22px;
+          margin-bottom: 22px;
         }
 
       }
 
       &:nth-child(2) {
-        display: none;
+        // display: none;
 
         @media (min-width: $screen-tablet) {
-          display: flex;
-          height: 40px;
-          overflow: hidden;
+          // display: block;
+          // height: 40px;
+          // overflow: hidden;
           // margin-bottom: 11px;
         }
 
         @media (min-width: $screen-desktop) {
-          height: auto;
-          overflow: visible;
+          // height: auto;
+          // overflow: visible;
           // margin-bottom: 14px;
         }
       }
@@ -86,12 +116,20 @@
     }
 
     @media (min-width: $screen-desktop) {
-      margin: 16px 0;
+      margin: 0;
     }
+
+    &--open {
+
+    }
+
+
   }
 
   &__figure {
     margin: 0 -1rem;
+    min-width: 320px;
+    max-width: 100%;
 
     @media (min-width: $screen-tablet) {
       width: 50%;

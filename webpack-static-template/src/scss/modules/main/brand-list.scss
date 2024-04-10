@@ -96,11 +96,14 @@
       margin-bottom: 6px;
     }
 
-    @media (min-width: $screen-desktop) {
+    @media (min-width: $screen-laptop) {
+
+      margin-top: 22px;
+      margin-bottom: 4px;
     }
 
     &::before {
-      transition: transform 300ms ease-out;
+      // transition: transform 300ms ease-out;
     }
 
     // &::before {
@@ -115,13 +118,13 @@
     //   // top: 8px;
     // }
 
-    &--open {
-      width: 94px;
-      &::before {
-        // transition: transform 300ms ease-out;
-        transform: rotate(180deg);
-      }
-    }
+    // &--open {
+    //   width: 94px;
+    //   &::before {
+
+    //     transform: rotate(180deg);
+    //   }
+    // }
   }
 
   &__pagination {

@@ -1,6 +1,6 @@
 .more-btn {
   position: relative;
-  width: 131px;
+  width: 128px;
   padding: 0;
   text-align: end;
   line-height: 130%;
@@ -9,14 +9,29 @@
   background-color: transparent;
 
 
+
   &::before {
     content: '';
     display: block;
     position: absolute;
-    width: 8px;
+    width: 10px;
     height: 10px;
     background-image: url("../img/icons/double-arrows.svg");
-    transform: translate(9px, 6px);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transform: translate(4px, 6px);
+    transition: transform 300ms ease-in;
+    // transform-origin: 50% 100%;
+  }
+
+
+  &--open {
+    width: 94px;
+
+    &::before {
+      transform: translate(15px, 6px) rotate(-180deg);
+    }
   }
 
 

@@ -1,45 +1,73 @@
 import '../scss/style.scss';
 
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
+
+
+const aboutUs = document.querySelector('.about-us__desc');
+const aboutUsDesc = aboutUs.querySelector('.about-us__desc-item-group');
+const showAllaboutUsDescBtn = aboutUs.querySelector('.about-us__more-btn');
 
 const brandList = document.querySelector('.brand-list');
 const brandListBody = brandList.querySelector('.brand-list__body');
 const showAllBrandBtn = brandList.querySelector('.brand-list__more-btn');
 
-
-showAllBrandBtn.addEventListener('click', () => {
-
-    if (!showAllBrandBtn.classList.contains('brand-list__more-btn--open')) {
-      showAllBrandBtn.classList.add('brand-list__more-btn--open');
-        brandListBody.classList.add('brand-list__body--extended');
-        showAllBrandBtn.textContent = 'Скрыть';
-    } else {
-        showAllBrandBtn.classList.remove('brand-list__more-btn--open');
-        brandListBody.classList.remove('brand-list__body--extended');
-        showAllBrandBtn.textContent = 'Показать всё';
-    }
-});
-
 const deviceTypeList = document.querySelector('.device-type-list');
 const deviceTypeBody = deviceTypeList.querySelector('.device-type-list__body');
 const showAllDeviceTypeBtn = deviceTypeList.querySelector('.device-type-list__more-btn');
 
-showAllDeviceTypeBtn.addEventListener('click', () => {
+const showMore = {
+  aboutUs : {
+    body: aboutUsDesc,
+    extendBodyClass: 'about-us__desc-item-group--extended',
+    triggerBtn: showAllaboutUsDescBtn,
+    openedBtnClass: 'more-btn--open',
+    hiddenTextContent: 'Читать далее',
+  },
+  brandList : {
+    body: brandListBody,
+    extendBodyClass: 'brand-list__body--extended',
+    triggerBtn: showAllBrandBtn,
+    openedBtnClass: 'more-btn--open',
+    hiddenTextContent: 'Показать всё',
+  },
+  deviceTypeList : {
+    body: deviceTypeBody,
+    extendBodyClass: 'device-type-list__body--extended',
+    triggerBtn: showAllDeviceTypeBtn,
+    openedBtnClass: 'more-btn--open',
+    hiddenTextContent: 'Показать всё',
+  },
+}
 
-    if (!showAllDeviceTypeBtn.classList.contains('device-type-list__more-btn--open')) {
-      showAllDeviceTypeBtn.classList.add('device-type-list__more-btn--open');
-      deviceTypeBody.classList.add('device-type-list__body--extended');
-      showAllDeviceTypeBtn.textContent = 'Скрыть';
-    } else {
-      showAllDeviceTypeBtn.classList.remove('device-type-list__more-btn--open');
-      deviceTypeBody.classList.remove('device-type-list__body--extended');
-      showAllDeviceTypeBtn.textContent = 'Показать всё';
-    }
+function expandArea(targetArea) {
+
+  if (!targetArea['triggerBtn'].classList.contains(targetArea['openedBtnClass'])) {
+    targetArea['triggerBtn'].classList.add(targetArea['openedBtnClass']);
+    targetArea['body'].classList.add(targetArea['extendBodyClass']);
+    targetArea['triggerBtn'].textContent = 'Скрыть';
+  } else {
+    targetArea['triggerBtn'].classList.remove(targetArea['openedBtnClass']);
+    targetArea['body'].classList.remove(targetArea['extendBodyClass']);
+    targetArea['triggerBtn'].textContent = targetArea['hiddenTextContent'];
+  }
+}
+
+showAllaboutUsDescBtn.addEventListener('click', () => {
+  expandArea(showMore['aboutUs'])
 });
 
+showAllBrandBtn.addEventListener('click', () => {
+  expandArea(showMore['brandList'])
+});
+
+showAllDeviceTypeBtn.addEventListener('click', () => {
+  expandArea(showMore['deviceTypeList'])
+});
+
+
 const brandSlider = new Swiper('.brand-list__slider', {
-  modules: [Navigation, Pagination],
+  modules: [Pagination],
   pagination: {
       el: '.brand-list__pagination',
       clickable: true,
@@ -61,7 +89,7 @@ const brandSlider = new Swiper('.brand-list__slider', {
 });
 
 const deviceTypeSlider = new Swiper('.device-type-list__slider', {
-  modules: [Navigation, Pagination],
+  modules: [Pagination],
   pagination: {
       el: '.device-type-list__pagination',
       clickable: true,
@@ -84,7 +112,7 @@ const deviceTypeSlider = new Swiper('.device-type-list__slider', {
 
 
 const priceTypeSlider = new Swiper('.price-list__slider', {
-  modules: [Navigation, Pagination],
+  modules: [Pagination],
   pagination: {
       el: '.price-list__pagination',
       clickable: true,
