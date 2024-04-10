@@ -1,17 +1,15 @@
 .header {
+
   min-width: $screen-mobile;
-  max-width: $screen-size;
+  max-width: $screen-desktop;
   display: flex;
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $aquamarineLiteColor;
-  // padding: 18px 1rem;
-  @include edge-padding(18px, 1rem);
   position: relative;
+  @include edge-padding(18px, 1rem);
 
-  @media (min-width: $screen-tablet) {
-  }
 
   @media (min-width: $screen-laptop) {
     display: none;
@@ -33,12 +31,12 @@
   }
 
   &::after {
+
     content: '';
     position: absolute;
     display: block;
     height: 32px;
     width: 2px;
-
     right: 16px + 96px + 20px;
     background-color: $liteGrayColor;
     border-radius: 1px;
@@ -49,6 +47,7 @@
   }
 
   &__items-group {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;

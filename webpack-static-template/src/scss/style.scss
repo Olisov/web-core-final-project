@@ -16,18 +16,18 @@ $blureColir: rgba(255, 255, 255, 0.75);
 // $activePaginationColor: #B5B6BC;
 
 $screen-mobile: 320px;
-// $screen-mobile-wide: 360px;
+
 $screen-tablet: 768px;
 $screen-laptop: 1366px;
 $screen-desktop: 1440px;
-$screen-size: $screen-laptop;
 
-// $edge-padding: 1rem;
+
+
 
 $mobile-multiplier: 1;
 $tablet-multiplier: 1.5;
 $desktop-multiplier: 2;
-// $aside-width: 340px;
+
 
 
 @import '/modules/body.scss', '/modules/blure.scss', '/modules/func-btn', '/modules/more-btn',
@@ -42,17 +42,5 @@ $desktop-multiplier: 2;
   '/modules/main/price-list', '/modules/main/price-item',
   '/modules/main/main-footer', '/modules/connectWithUs.scss';
 
-
-
-// @media (min-width: $screen-tablet) {
-// }
-
-// @media (min-width: $screen-laptop) {
-// }
-
-// @media (min-width: $screen-desktop) {
-// }
-
-// @include edge-padding(0, 1rem);
 
 

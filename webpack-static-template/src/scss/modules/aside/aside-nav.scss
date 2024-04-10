@@ -48,22 +48,16 @@
 
     z-index: 10;
     background-color: $whiteColir;
-
     transform: translateX(0);
     opacity: 1;
-
-    @media (min-width: $screen-laptop) {
-
-    }
   }
 
-
   &__header {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 18px 0;
-
 
     @media (min-width: $screen-tablet) {
       margin-bottom: 25px;
@@ -74,16 +68,13 @@
     }
 
     &-close-btn {
+
       @media (min-width: $screen-laptop) {
         display: none;
       }
     }
 
     &-logo {
-      // @media (min-width: $screen-mobile-wide) {
-      //   width: 103px;
-      //   height: 55px;
-      // }
 
       @media (min-width: $screen-tablet) {
         width: auto;
@@ -92,14 +83,11 @@
     }
 
     &-group {
+
       display: flex;
       width: 154px;
       align-items: center;
       justify-content: space-between;
-
-      // @media (min-width: $screen-mobile-wide) {
-      //   width: 160px;
-      // }
 
       @media (min-width: $screen-tablet) {
         width: 154px;

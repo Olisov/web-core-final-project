@@ -1,14 +1,13 @@
 .about-us {
+
   display: flex;
   flex-direction: column;
-
+  border-bottom: 1px solid $aquamarineLiteColor;
   @include edge-padding(24px, 1rem);
 
-  border-bottom: 1px solid $aquamarineLiteColor;
 
   @media (min-width: $screen-tablet) {
     flex-direction: row;
-    // padding-bottom: 2rem;
     justify-content: space-between;
   }
 
@@ -22,91 +21,52 @@
   }
 
   &__desc {
-    // padding-top: 24px;
-
-
 
     @media (min-width: $screen-tablet) {
+
       flex-basis: 313px;
       flex-grow: 1;
-      // max-width: 313px;
-      // max-height: 120px;
-      // max-width: 49%;
-
     }
 
     @media (min-width: $screen-desktop) {
-      // flex-basis: 313px;
       flex-basis: 490px;
-
     }
 
     &-item {
       font-size: 14px;
       line-height: 128%;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.013em;
       margin: 0;
-      // margin-bottom: 16px;
 
       @media (min-width: $screen-tablet) {
         line-height: 140%;
-        letter-spacing: 0.013em;
-
       }
-      @media (min-width: $screen-desktop) {
-
-      }
-
 
       &-group {
 
         max-height: 90px;
         overflow: hidden;
-
         margin-right: 24px;
         transition: max-height 800ms ease-out;
 
         @media (min-width: $screen-tablet) {
           max-height: 160px;
-
-          // margin-bottom: 11px;
         }
 
         @media (min-width: $screen-laptop) {
           flex-grow: 0;
-
           margin-bottom: 14px;
         }
 
         &--extended {
           max-height: 250px;
-
         }
-
       }
 
       &:first-child {
 
         @media (min-width: $screen-tablet) {
           margin-bottom: 22px;
-        }
-
-      }
-
-      &:nth-child(2) {
-        // display: none;
-
-        @media (min-width: $screen-tablet) {
-          // display: block;
-          // height: 40px;
-          // overflow: hidden;
-          // margin-bottom: 11px;
-        }
-
-        @media (min-width: $screen-desktop) {
-          // height: auto;
-          // overflow: visible;
-          // margin-bottom: 14px;
         }
       }
     }
@@ -122,12 +82,6 @@
     @media (min-width: $screen-desktop) {
       margin: 0;
     }
-
-    &--open {
-
-    }
-
-
   }
 
   &__figure {
@@ -136,11 +90,10 @@
     max-width: 100%;
 
     @media (min-width: $screen-tablet) {
-      // width: 48%;
+
       flex-basis: 50%;
       flex-grow: 1;
       aspect-ratio: 320 / 176;
-      // aspect-ratio: 4 / 2;
       margin: 0;
     }
 

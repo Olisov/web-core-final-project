@@ -1,30 +1,22 @@
 .device-type-list {
+
   box-sizing: border-box;
-  // min-width: $screen-size;
-  @include edge-padding(0, 1rem);
-
   border-bottom: 1px solid $aquamarineLiteColor;
-
-  @media (min-width: $screen-tablet) {
-    // min-width: $screen-tablet;  /////
-  }
+  @include edge-padding(0, 1rem);
 
   @media (min-width: $screen-desktop) {
     padding-bottom: 18px;
   }
 
   &__title {
+
     margin: 0;
-
     font-size: 16px;
-
     line-height: 150%;
     letter-spacing: -0.01em;
-
     text-transform: uppercase;
     color: $grayTextColor;
     padding: 16px 0;
-
     background-image: linear-gradient(
       to left bottom,
       white 50%,
@@ -45,14 +37,9 @@
     @media (min-width: $screen-tablet) {
       padding: 24px 0;
     }
-
-    // @media (min-width: $screen-desktop) {
-    // }
   }
 
   &__body {
-    // height: 72px;
-    // padding: 16px 0;
     padding-bottom: 12px;
 
     transition: max-height 800ms ease-out;
@@ -63,13 +50,11 @@
       row-gap: 16px;
       flex-wrap: wrap;
       overflow: hidden;
-      // padding: 24px 0;
       transform: none !important;
     }
 
     @media (min-width: $screen-laptop) {
       column-gap: 32px;
-      // padding: 24px 0;
     }
 
     &--extended {
@@ -90,18 +75,6 @@
     @media (min-width: $screen-desktop) {
     }
 
-    // &::before {
-    //   content: '';
-    //   position: absolute;
-    //   height: 24px;
-    //   width: 24px;
-    //   background-image: url('/img/double-arrows.svg');
-    //   background-position: center;
-    //   background-repeat: no-repeat;
-    //   // left: 0px;
-    //   // top: 8px;
-    // }
-
     &::before {
       transition: transform 300ms ease-out;
     }
@@ -116,8 +89,6 @@
   }
 
   &__pagination {
-    // transform: translateY(45%);
     text-align: center;
-    // justify-content: center;
   }
 }

@@ -1,38 +1,28 @@
 .main-header {
+
   max-width: 100%;
-
-  @media (min-width: $screen-laptop) {
-
-  }
 
   &__headline {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-  @media (min-width: $screen-laptop) {
-    padding: 30px 32px 0 32px;
-
-
-  }
-
+    @media (min-width: $screen-laptop) {
+      padding: 30px 32px 0 32px;
+    }
   }
 
   &__title {
+
     display: flex;
     box-sizing: border-box;
     position: relative;
     margin: 0;
-    // padding: 24px 0;
     @include edge-padding(24px, 1rem);
-
     font-family: 'TTLakes-bold', sans-serif;
     font-size: 1.75rem;
     line-height: 143%;
     letter-spacing: -0.02em;
-
-    @media (min-width: $screen-tablet) {
-    }
 
     @media (min-width: $screen-laptop) {
       padding: 0;

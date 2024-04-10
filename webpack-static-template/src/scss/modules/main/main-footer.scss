@@ -14,25 +14,18 @@
   justify-content: space-between;
 
   @media (min-width: $screen-tablet) {
-    flex-direction: row;
-    @include edge-padding(32px, 1rem);
-    height: auto;
 
+    flex-direction: row;
+    height: auto;
     text-align: start;
     align-items: start;
+    @include edge-padding(32px, 1rem);
   }
 
-  // @media (min-width: $screen-desktop) {
-  // }
-
   &__item {
-    @media (min-width: $screen-tablet) {
-    }
-
-    &:first-child {
-    }
 
     &:nth-child(2) {
+
       @media (min-width: $screen-tablet) {
         flex-grow: 1;
         text-align: end;
@@ -41,7 +34,6 @@
       @media (min-width: $screen-desktop) {
         text-align: center;
       }
-
     }
 
     &:last-child {

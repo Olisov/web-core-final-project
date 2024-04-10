@@ -4,10 +4,6 @@
   color: $blackTextColor;
   position: relative;
   overflow-x: hidden;
-  // max-width: $screen-desktop;
-
-  // border: 1px solid red;
-
 
   @media (min-width: $screen-laptop) {
     display: flex;

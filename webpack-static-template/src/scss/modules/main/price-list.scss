@@ -1,12 +1,10 @@
 .price-list {
-  // max-width: $screen-size;
-  box-sizing: border-box;
 
+  box-sizing: border-box;
   border-bottom: 1px solid $aquamarineLiteColor;
   padding-bottom: 46px;
 
   @media (min-width: $screen-tablet) {
-    // @include edge-padding(0, 16px);
     padding-bottom: 40px;
   }
 
@@ -15,41 +13,30 @@
   }
 
   &__title {
+
     @include edge-padding(16px, 16px);
     margin: 0;
-
     font-size: 16px;
-
     line-height: 150%;
     letter-spacing: -0.01em;
-
     text-transform: uppercase;
     color: $grayTextColor;
-    // padding: 16px 0;
+
 
     background-image: linear-gradient(
       to left bottom,
       white 50%,
       rgba(200, 200, 200, 0.25)
     );
-
-    @media (min-width: $screen-tablet) {
-      // @include edge-padding(16px, 0);
-    }
-
-    // @media (min-width: $screen-desktop) {
-    // }
   }
 
   &__slider {
+
     @include edge-padding(0, 10px);
     display: block;
     box-sizing: border-box;
-
-    // max-width: $screen-size;
     position: relative;
     overflow: hidden;
-    // padding: 16px 0;
     background-image: linear-gradient(
       to right top,
       white 50%,
@@ -61,13 +48,8 @@
       flex-direction: column;
       width: 100%;
       @include edge-padding(0, 16px);
-      // margin: 0 16px;
 
-      // border-spacing: 0;
     }
-
-    // @media (min-width: $screen-desktop) {
-    // }
   }
 
   &__thead {
@@ -83,8 +65,6 @@
 
     @media (min-width: $screen-tablet) {
       display: flex;
-
-      // width: 100%;
     }
   }
 
@@ -102,9 +82,6 @@
       padding-top: 0;
       flex-direction: column;
     }
-
-    // @media (min-width: $screen-desktop) {
-    // }
   }
 
   &__pagination {
@@ -112,12 +89,12 @@
   }
 
   &__note {
+
     @include edge-padding(8px, 16px);
 
     @media (min-width: $screen-tablet) {
       width: 420px;
       padding-top: 6px;
-      // padding-bottom: 24px;
     }
 
     @media (min-width: $screen-desktop) {
@@ -125,6 +102,7 @@
     }
 
     &-desc {
+
       margin: 0;
       font-size: 14px;
       line-height: 143%;
@@ -138,20 +116,12 @@
 
     &-offer-btn {
       font-family: 'TTLakes-medium', sans-serif;
-      // font-size: 16px;
       line-height: 80%;
       letter-spacing: -0.01em;
       text-align: start;
       border: none;
       background-color: transparent;
       padding: 0;
-
-      // @media (min-width: $screen-tablet) {
-
-      // }
-
-      // @media (min-width: $screen-desktop) {
-      // }
 
       &-arrow {
         display: inline-block;

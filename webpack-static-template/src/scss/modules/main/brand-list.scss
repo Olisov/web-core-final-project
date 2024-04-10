@@ -1,26 +1,14 @@
 .brand-list {
+
   box-sizing: border-box;
-  // min-width: $screen-size;
-  @include edge-padding(0, 1rem);
-
   border-bottom: 1px solid $aquamarineLiteColor;
-
-  @media (min-width: $screen-tablet) {
-    // min-width: $screen-tablet;
-  }
-
-  @media (min-width: $screen-desktop) {
-  }
+  @include edge-padding(0, 1rem);
 
   &__title {
     margin: 0;
-
     font-size: 16px;
-    // line-height: 160%;
-    // letter-spacing: -0.015em;
     line-height: 150%;
     letter-spacing: -0.01em;
-
     text-transform: uppercase;
     color: $grayTextColor;
     padding: 16px 0;
@@ -55,34 +43,27 @@
   }
 
   &__body {
+
     max-height: 72px;
-
     padding-bottom: 12px;
-
     transition: max-height 500ms ease-out;
 
-    // transition: height 2s ease-out;
-
     @media (min-width: $screen-tablet) {
+
       max-height: 152px;
       column-gap: 24px;
       row-gap: 16px;
       flex-wrap: wrap;
       overflow: hidden;
-      // padding: 24px 0;
-
       transform: none !important;
     }
 
     @media (min-width: $screen-laptop) {
       column-gap: 32px;
-      // padding: 24px 0;
     }
 
     &--extended {
       max-height: 250px;
-
-
     }
   }
 
@@ -97,39 +78,12 @@
     }
 
     @media (min-width: $screen-laptop) {
-
       margin-top: 22px;
       margin-bottom: 4px;
     }
-
-    &::before {
-      // transition: transform 300ms ease-out;
-    }
-
-    // &::before {
-    //   content: '';
-    //   position: absolute;
-    //   height: 24px;
-    //   width: 24px;
-    //   background-image: url('/img/double-arrows.svg');
-    //   background-position: center;
-    //   background-repeat: no-repeat;
-    //   // left: 0px;
-    //   // top: 8px;
-    // }
-
-    // &--open {
-    //   width: 94px;
-    //   &::before {
-
-    //     transform: rotate(180deg);
-    //   }
-    // }
   }
 
   &__pagination {
-    // transform: translateY(45%);
     text-align: center;
-    // justify-content: center;
   }
 }
