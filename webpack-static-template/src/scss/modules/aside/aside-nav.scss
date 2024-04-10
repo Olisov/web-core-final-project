@@ -4,17 +4,8 @@
   box-sizing: border-box;
   min-width: 320px;
   width: 100%;
-  z-index: -1;
-  // max-width: 100%;
-
-
+  z-index: 0;
   height: 100vh;
-  // height: 676px;
-  // height: 1024px;
-
-  // position: relative;
-
-  // left: -320px;
 
   transform: translateX(-320px);
   display: flex;
@@ -22,12 +13,7 @@
   top: 0;
   opacity: 0;
   transition: transform 1s ease-out, opacity 1s;
-
   @include edge-padding(0, 1rem);
-
-  // @media (min-width: $screen-mobile-wide) {
-  //   // min-width: 360px;
-  // }
 
   @media (min-width: $screen-tablet) {
     max-width: 320px;
@@ -42,7 +28,6 @@
     transform: translateX(0);
     height: 936px;
   }
-
 
   &--modal {
 
