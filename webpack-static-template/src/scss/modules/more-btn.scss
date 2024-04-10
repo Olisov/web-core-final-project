@@ -1,6 +1,7 @@
 .more-btn {
   position: relative;
-  width: 128px;
+
+  width: 132px;
   padding: 0;
   text-align: end;
   line-height: 130%;
@@ -20,9 +21,9 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    transform: translate(4px, 6px);
+    transform: translate(8px, 6px);
     transition: transform 300ms ease-in;
-    // transform-origin: 50% 100%;
+
   }
 
 
